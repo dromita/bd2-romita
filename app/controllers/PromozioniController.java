@@ -7,6 +7,8 @@ import play.db.jpa.Transactional;
 import play.mvc.Controller;
 import play.mvc.Result;
 
+import java.util.List;
+
 /**
  * Created by Nomak on 15/07/2015.
  */
@@ -38,14 +40,24 @@ public class PromozioniController extends Controller {
         PromozioniDao promoDao = new PromozioniDao();
         PromozioniEntity top = promoDao.getTopPromo();
 
-        return ok(String.format("Promozione migliore: %s per %s euro"), top.getNome(), top.getCosto());
+        return ok(String.format("Promozione migliore: %s per %s euro, codice %s", top.getNome(), top.getCosto(), top.getId()));
     }
-//
-//    @Transactional
-//    public static Result show() {
-//        Form<PromozioniEntity> promozioneForm = Form.form(model.PromozioniEntity.class);
-//
-//        return ok(views.html.promozioni.render(promozioneForm));
-//    }
+
+    @Transactional
+    public static Result showAllPromos(){
+        PromozioniDao promoDao = new PromozioniDao();
+        List<PromozioniEntity> promozioni = promoDao.getAllPromos();
+
+        return ok("mi devi ancora implementare bene in showAllPromos");
+        // return ok(views.html.promozioni.render(promozioni));
+    }
+
+    @Transactional
+    public static Result show() {
+        Form<PromozioniEntity> promozioneForm = Form.form(model.PromozioniEntity.class);
+
+        return ok("mi devi ancora implementare bene in show di promozioni");
+        //return ok(views.html.promozioni.render(promozioneForm));
+    }
 
 }

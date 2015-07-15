@@ -28,6 +28,10 @@ public class PromozioniDao extends DaoService<PromozioniEntity, Integer> {
         return (PromozioniEntity)q.getSingleResult();
     }
 
+    public PromozioniEntity getPromo(int promoId){
+        return (PromozioniEntity) em.createQuery("FROM promozioni WHERE id = :idPromo").setParameter("idPromo", promoId).getSingleResult();
+    }
+
     public List<PromozioniEntity> getAllPromos(){
         return em.createQuery("FROM promozioni").getResultList();
     }
@@ -64,30 +68,24 @@ public class PromozioniDao extends DaoService<PromozioniEntity, Integer> {
         List<PromoListaServizi> result = new LinkedList<>();
 
         for (PromozioniEntity promo : listPromo) {
-            String sDetailPromo = "SELECT promo_servizi FROM promo_servizi WHERE id = :promoId";
-            //List<PromoServiziEntity> listPromoServizi = em.createNativeQuery(sDetailPromo).getResultList();
-            // uso direttamente il vettore di oggetti perchè immagino che non sappia fare il mapping diretto, essendo il controller di un'altra classe
-            List<Object[]> listPromoServizi = em.createNativeQuery(sDetailPromo).setParameter("promoId", promo.getId()).getResultList();
-
-            String elencoServizi = "Servizi: " + getElencoServizi(promo.getId());
-
-//            for (Object[] o : listPromoServizi){
-//
-//                ServiziEntity servizio =
-//                        (ServiziEntity) em.createNativeQuery("SELECT * FROM servizi WHERE nome = :nomeServ ")
-//                                .setParameter("nomeServ", (String) o[2])
-//                                .getSingleResult();
-//
-//                elencoServizi.append(servizio.getNome() + ", ");
-//            }
-
-            PromoListaServizi promoServ = new PromoListaServizi(promo.getNome(), promo.getCosto(), elencoServizi);
-            result.add(promoServ);
+            result.add(getDetailedPromo(promo.getId()));
         }
 
         return result;
     }
 
+    public PromoListaServizi getDetailedPromo(int promoId){
+//        PromozioniEntity promo = getPromo(promoId);
+//
+//        String sDetailPromo = "SELECT promo_servizi FROM promo_servizi WHERE id = :promoId";
+//        //List<PromoServiziEntity> listPromoServizi = em.createNativeQuery(sDetailPromo).getResultList();
+//        // uso direttamente il vettore di oggetti perchè immagino che non sappia fare il mapping diretto, essendo il controller di un'altra classe
+//        List<Object[]> listPromoServizi = em.createNativeQuery(sDetailPromo).setParameter("promoId", promo.getId()).getResultList();
 
+        String elencoServizi = "Servizi: " + getElencoServizi(promo.getId());
+        PromoListaServizi promoServ = new PromoListaServizi(promo.getNome(), promo.getCosto(), elencoServizi);
+
+        return promoServ;
+    }
 
 }
