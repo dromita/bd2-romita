@@ -4,7 +4,7 @@
 		module="bd2-romita$sbt_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20150714202630"
+		publication="20150715195114"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>

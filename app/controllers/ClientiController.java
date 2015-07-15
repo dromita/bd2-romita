@@ -37,10 +37,12 @@ public class ClientiController extends Controller {
 
 
     @Transactional
-    public static Result aggiungiServiziCliente(){
+    public static Result aggiungiServiziCliente(Integer codiceCliente){
         Form<ServiziClientiForm> form = Form.form(ServiziClientiForm.class).bindFromRequest();
 
         ServiziClientiForm serviziClienti = form.get();
+
+        serviziClienti.codiceCliente = codiceCliente;
 
         List<FruizioneServiziClientiEntity> fsc = serviziClienti.toEntity();
 
@@ -48,7 +50,7 @@ public class ClientiController extends Controller {
             new FruizioneServiziClientiDao().persist(entita);
         }
 
-        return ok("vaffammokc");
+        return ok("Servizi aggiunti");
     }
 
     @Transactional

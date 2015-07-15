@@ -1,6 +1,6 @@
 // @SOURCE:D:/typesafe_activator/activator-dist-1.3.5/bd2-romita/conf/routes
-// @HASH:bd8b39863bd9576aee84a61499712007e526d459
-// @DATE:Wed Jul 15 19:14:02 CEST 2015
+// @HASH:2a770844e75caaec2e0ff477c1384fb495cf9645
+// @DATE:Wed Jul 15 19:36:58 CEST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -82,17 +82,17 @@ def show(): Call = {
 }
                         
 
-// @LINE:10
-def aggiungiServiziCliente(): Call = {
-   import ReverseRouteContext.empty
-   Call("POST", _prefix + { _defaultPrefix } + "add_servizi_cliente")
-}
-                        
-
 // @LINE:11
 def getNumNoleggi(): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "getNoleggi")
+}
+                        
+
+// @LINE:10
+def aggiungiServiziCliente(codiceCliente:Integer): Call = {
+   import ReverseRouteContext.empty
+   Call("POST", _prefix + { _defaultPrefix } + "add_servizi_cliente" + queryString(List(Some(implicitly[QueryStringBindable[Integer]].unbind("codiceCliente", codiceCliente)))))
 }
                         
 
@@ -260,23 +260,23 @@ def show : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:10
-def aggiungiServiziCliente : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.ClientiController.aggiungiServiziCliente",
-   """
-      function() {
-      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "add_servizi_cliente"})
-      }
-   """
-)
-                        
-
 // @LINE:11
 def getNumNoleggi : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.ClientiController.getNumNoleggi",
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "getNoleggi"})
+      }
+   """
+)
+                        
+
+// @LINE:10
+def aggiungiServiziCliente : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.ClientiController.aggiungiServiziCliente",
+   """
+      function(codiceCliente) {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "add_servizi_cliente" + _qS([(""" + implicitly[QueryStringBindable[Integer]].javascriptUnbind + """)("codiceCliente", codiceCliente)])})
       }
    """
 )
@@ -458,15 +458,15 @@ def show(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 )
                       
 
-// @LINE:10
-def aggiungiServiziCliente(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.ClientiController.aggiungiServiziCliente(), HandlerDef(this.getClass.getClassLoader, "", "controllers.ClientiController", "aggiungiServiziCliente", Seq(), "POST", """""", _prefix + """add_servizi_cliente""")
-)
-                      
-
 // @LINE:11
 def getNumNoleggi(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.ClientiController.getNumNoleggi(), HandlerDef(this.getClass.getClassLoader, "", "controllers.ClientiController", "getNumNoleggi", Seq(), "GET", """""", _prefix + """getNoleggi""")
+)
+                      
+
+// @LINE:10
+def aggiungiServiziCliente(codiceCliente:Integer): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.ClientiController.aggiungiServiziCliente(codiceCliente), HandlerDef(this.getClass.getClassLoader, "", "controllers.ClientiController", "aggiungiServiziCliente", Seq(classOf[Integer]), "POST", """""", _prefix + """add_servizi_cliente""")
 )
                       
 

@@ -15,6 +15,7 @@ public class FruizioneServiziClientiEntity {
     private ServiziEntity servizioByServizio;
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false, insertable = true, updatable = true)
     public Integer getId() {
         return id;

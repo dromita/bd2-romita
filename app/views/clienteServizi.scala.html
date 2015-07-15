@@ -10,7 +10,7 @@
 
     <div class="container">
 
-        @helper.form(action = routes.ClientiController.aggiungiServiziCliente()) {
+        @helper.form(action = routes.ClientiController.aggiungiServiziCliente(cliente.getId())) {
             <div id="signup" class="row">
 
                 @if(clienteServiziForm.hasErrors) {
@@ -18,28 +18,26 @@
                     @notice("error") {color => <span style="color:red"> @clienteServiziForm.globalError.message </span>}
                     </p>
                 }
-                @inputText(
-                    clienteServiziForm()
-                )
 
                     <!-- Checkboxes -->
+
                 @checkbox(
-                    clienteServiziForm("spa"),
+                    field = clienteServiziForm("spa"),
                     '_label -> "SPA"
                 )
 
                 @checkbox(
-                    clienteServiziForm("piscina"),
+                    field = clienteServiziForm("piscina"),
                     '_label -> "Piscina"
                 )
 
                 @checkbox(
-                    clienteServiziForm("mass_relax"),
+                    field = clienteServiziForm("mass_relax"),
                     '_label -> "Massaggio relax"
                 )
 
                 @checkbox(
-                    clienteServiziForm("mass_shiatsu"),
+                    field = clienteServiziForm("mass_shiatsu"),
                     '_label -> "Massaggio shiatsu"
                 )
 

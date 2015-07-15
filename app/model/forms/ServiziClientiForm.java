@@ -31,7 +31,7 @@ public class ServiziClientiForm {
         try {
             cliente = new ClientiDao().findById(codiceCliente);
 
-            if (spa){
+            if (spa != null){
                 FruizioneServiziClientiEntity spa = new FruizioneServiziClientiEntity();
                 spa.setDataFruizione(data);
                 spa.setClienteByCliente(cliente);
@@ -41,7 +41,7 @@ public class ServiziClientiForm {
                 result.add(spa);
             }
 
-            if (piscina){
+            if (piscina != null){
                 FruizioneServiziClientiEntity piscina = new FruizioneServiziClientiEntity();
                 piscina.setDataFruizione(data);
                 piscina.setClienteByCliente(cliente);
@@ -51,7 +51,7 @@ public class ServiziClientiForm {
                 result.add(piscina);
             }
 
-            if (mass_relax){
+            if (mass_relax != null){
                 FruizioneServiziClientiEntity relax = new FruizioneServiziClientiEntity();
                 relax.setDataFruizione(data);
                 relax.setClienteByCliente(cliente);
@@ -61,7 +61,7 @@ public class ServiziClientiForm {
                 result.add(relax);
             }
 
-            if (mass_shiatsu){
+            if (mass_shiatsu != null){
                 FruizioneServiziClientiEntity shiatsu = new FruizioneServiziClientiEntity();
                 shiatsu.setDataFruizione(data);
                 shiatsu.setClienteByCliente(cliente);

@@ -7,10 +7,10 @@
 		revision="1.0-SNAPSHOT"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20150714203616"/>
+		date="20150715195130"/>
 	<dependencies>
 		<module organisation="org.postgresql" name="postgresql">
-			<revision name="9.4-1201-jdbc41" status="release" pubdate="20150225171525" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jdbc.postgresql.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="63">
+			<revision name="9.4-1201-jdbc41" status="release" pubdate="20150225171525" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jdbc.postgresql.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="62">
 				<license name="The PostgreSQL License" url="http://www.postgresql.org/about/licence/"/>
 				<metadata-artifact status="no" details="" size="3429" time="0" location="C:\Users\Nomak\.ivy2\cache\org.postgresql\postgresql\ivy-9.4-1201-jdbc41.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/postgresql/postgresql/9.4-1201-jdbc41/postgresql-9.4-1201-jdbc41.pom"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="9.4-1201-jdbc41" rev-constraint-default="9.4-1201-jdbc41" rev-constraint-dynamic="9.4-1201-jdbc41" callerrev="1.0-SNAPSHOT"/>
@@ -18,39 +18,37 @@
 					<artifact name="postgresql" type="jar" ext="jar" status="no" details="" size="648487" time="0" location="C:\Users\Nomak\.ivy2\cache\org.postgresql\postgresql\jars\postgresql-9.4-1201-jdbc41.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/postgresql/postgresql/9.4-1201-jdbc41/postgresql-9.4-1201-jdbc41.jar"/>
 					</artifact>
-					<artifact name="postgresql" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="405856" time="2489" location="C:\Users\Nomak\.ivy2\cache\org.postgresql\postgresql\srcs\postgresql-9.4-1201-jdbc41-sources.jar">
+					<artifact name="postgresql" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="405856" time="0" location="C:\Users\Nomak\.ivy2\cache\org.postgresql\postgresql\srcs\postgresql-9.4-1201-jdbc41-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/postgresql/postgresql/9.4-1201-jdbc41/postgresql-9.4-1201-jdbc41-sources.jar"/>
 					</artifact>
-					<artifact name="postgresql" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="222247" time="1532" location="C:\Users\Nomak\.ivy2\cache\org.postgresql\postgresql\docs\postgresql-9.4-1201-jdbc41-javadoc.jar">
+					<artifact name="postgresql" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="222247" time="0" location="C:\Users\Nomak\.ivy2\cache\org.postgresql\postgresql\docs\postgresql-9.4-1201-jdbc41-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/postgresql/postgresql/9.4-1201-jdbc41/postgresql-9.4-1201-jdbc41-javadoc.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.hibernate" name="hibernate-entitymanager">
-			<revision name="3.6.9.Final" status="release" pubdate="20111215072416" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="55">
+			<revision name="3.6.9.Final" status="release" pubdate="20111215072416" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="54">
 				<metadata-artifact status="no" details="" size="8595" time="0" location="C:\Users\Nomak\.ivy2\cache\org.hibernate\hibernate-entitymanager\ivy-3.6.9.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hibernate/hibernate-entitymanager/3.6.9.Final/hibernate-entitymanager-3.6.9.Final.pom"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="3.6.9.Final" rev-constraint-default="3.6.9.Final" rev-constraint-dynamic="3.6.9.Final" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="hibernate-entitymanager" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
 					<artifact name="hibernate-entitymanager" type="jar" ext="jar" status="no" details="" size="426314" time="0" location="C:\Users\Nomak\.ivy2\cache\org.hibernate\hibernate-entitymanager\jars\hibernate-entitymanager-3.6.9.Final.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hibernate/hibernate-entitymanager/3.6.9.Final/hibernate-entitymanager-3.6.9.Final.jar"/>
 					</artifact>
-					<artifact name="hibernate-entitymanager" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="300500" time="1475" location="C:\Users\Nomak\.ivy2\cache\org.hibernate\hibernate-entitymanager\srcs\hibernate-entitymanager-3.6.9.Final-sources.jar">
+					<artifact name="hibernate-entitymanager" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="300500" time="0" location="C:\Users\Nomak\.ivy2\cache\org.hibernate\hibernate-entitymanager\srcs\hibernate-entitymanager-3.6.9.Final-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hibernate/hibernate-entitymanager/3.6.9.Final/hibernate-entitymanager-3.6.9.Final-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.hibernate" name="hibernate-core">
-			<revision name="3.6.9.Final" status="release" pubdate="20111215071749" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="56">
+			<revision name="3.6.9.Final" status="release" pubdate="20111215071749" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="55">
 				<metadata-artifact status="no" details="" size="9773" time="0" location="C:\Users\Nomak\.ivy2\cache\org.hibernate\hibernate-core\ivy-3.6.9.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hibernate/hibernate-core/3.6.9.Final/hibernate-core-3.6.9.Final.pom"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="3.6.9.Final" rev-constraint-default="3.6.9.Final" rev-constraint-dynamic="3.6.9.Final" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="hibernate-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="2915748" time="13057" location="C:\Users\Nomak\.ivy2\cache\org.hibernate\hibernate-core\srcs\hibernate-core-3.6.9.Final-sources.jar">
+					<artifact name="hibernate-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2915748" time="0" location="C:\Users\Nomak\.ivy2\cache\org.hibernate\hibernate-core\srcs\hibernate-core-3.6.9.Final-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hibernate/hibernate-core/3.6.9.Final/hibernate-core-3.6.9.Final-sources.jar"/>
 					</artifact>
-					<artifact name="hibernate-core" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
 					<artifact name="hibernate-core" type="jar" ext="jar" status="no" details="" size="3119700" time="0" location="C:\Users\Nomak\.ivy2\cache\org.hibernate\hibernate-core\jars\hibernate-core-3.6.9.Final.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hibernate/hibernate-core/3.6.9.Final/hibernate-core-3.6.9.Final.jar"/>
 					</artifact>
@@ -58,15 +56,15 @@
 			</revision>
 		</module>
 		<module organisation="cglib" name="cglib">
-			<revision name="2.2" status="release" pubdate="20081028030139" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://cglib.sourceforge.net/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="60">
+			<revision name="2.2" status="release" pubdate="20081028030139" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://cglib.sourceforge.net/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="59">
 				<license name="ASF 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="2688" time="0" location="C:\Users\Nomak\.ivy2\cache\cglib\cglib\ivy-2.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/cglib/cglib/2.2/cglib-2.2.pom"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="2.2" rev-constraint-default="2.2" rev-constraint-dynamic="2.2" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="cglib" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="405000" time="1976" location="C:\Users\Nomak\.ivy2\cache\cglib\cglib\docs\cglib-2.2-javadoc.jar">
+					<artifact name="cglib" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="405000" time="0" location="C:\Users\Nomak\.ivy2\cache\cglib\cglib\docs\cglib-2.2-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/cglib/cglib/2.2/cglib-2.2-javadoc.jar"/>
 					</artifact>
-					<artifact name="cglib" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="173150" time="1252" location="C:\Users\Nomak\.ivy2\cache\cglib\cglib\srcs\cglib-2.2-sources.jar">
+					<artifact name="cglib" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="173150" time="0" location="C:\Users\Nomak\.ivy2\cache\cglib\cglib\srcs\cglib-2.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/cglib/cglib/2.2/cglib-2.2-sources.jar"/>
 					</artifact>
 					<artifact name="cglib" type="jar" ext="jar" status="no" details="" size="278682" time="0" location="C:\Users\Nomak\.ivy2\cache\cglib\cglib\jars\cglib-2.2.jar">
@@ -76,11 +74,10 @@
 			</revision>
 		</module>
 		<module organisation="asm" name="asm">
-			<revision name="3.1" status="release" pubdate="20080120113126" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="61">
+			<revision name="3.1" status="release" pubdate="20080120113126" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="60">
 				<metadata-artifact status="no" details="" size="2832" time="0" location="C:\Users\Nomak\.ivy2\cache\asm\asm\ivy-3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/asm/asm/3.1/asm-3.1.pom"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="asm" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
 					<artifact name="asm" type="jar" ext="jar" status="no" details="" size="43033" time="0" location="C:\Users\Nomak\.ivy2\cache\asm\asm\jars\asm-3.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/asm/asm/3.1/asm-3.1.jar"/>
 					</artifact>
@@ -91,15 +88,14 @@
 			</revision>
 		</module>
 		<module organisation="javassist" name="javassist">
-			<revision name="3.12.0.GA" status="release" pubdate="20101123082131" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.javassist.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="62">
+			<revision name="3.12.0.GA" status="release" pubdate="20101123082131" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.javassist.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="61">
 				<license name="LGPL 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
 				<metadata-artifact status="no" details="" size="2796" time="0" location="C:\Users\Nomak\.ivy2\cache\javassist\javassist\ivy-3.12.0.GA.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javassist/javassist/3.12.0.GA/javassist-3.12.0.GA.pom"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="3.12.0.GA" rev-constraint-default="3.12.0.GA" rev-constraint-dynamic="3.12.0.GA" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="javassist" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="488011" time="2281" location="C:\Users\Nomak\.ivy2\cache\javassist\javassist\srcs\javassist-3.12.0.GA-sources.jar">
+					<artifact name="javassist" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="488011" time="0" location="C:\Users\Nomak\.ivy2\cache\javassist\javassist\srcs\javassist-3.12.0.GA-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javassist/javassist/3.12.0.GA/javassist-3.12.0.GA-sources.jar"/>
 					</artifact>
-					<artifact name="javassist" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
 					<artifact name="javassist" type="jar" ext="jar" status="no" details="" size="633312" time="0" location="C:\Users\Nomak\.ivy2\cache\javassist\javassist\jars\javassist-3.12.0.GA.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javassist/javassist/3.12.0.GA/javassist-3.12.0.GA.jar"/>
 					</artifact>
@@ -107,15 +103,15 @@
 			</revision>
 		</module>
 		<module organisation="org.hibernate" name="hibernate-commons-annotations">
-			<revision name="3.2.0.Final" status="release" pubdate="20100309174153" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hibernate.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="59">
+			<revision name="3.2.0.Final" status="release" pubdate="20100309174153" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hibernate.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="58">
 				<license name="GNU LESSER GENERAL PUBLIC LICENSE" url="http://www.gnu.org/licenses/lgpl.txt"/>
 				<metadata-artifact status="no" details="" size="3629" time="0" location="C:\Users\Nomak\.ivy2\cache\org.hibernate\hibernate-commons-annotations\ivy-3.2.0.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hibernate/hibernate-commons-annotations/3.2.0.Final/hibernate-commons-annotations-3.2.0.Final.pom"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="3.2.0.Final" rev-constraint-default="3.2.0.Final" rev-constraint-dynamic="3.2.0.Final" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="hibernate-commons-annotations" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="194759" time="1558" location="C:\Users\Nomak\.ivy2\cache\org.hibernate\hibernate-commons-annotations\docs\hibernate-commons-annotations-3.2.0.Final-javadoc.jar">
+					<artifact name="hibernate-commons-annotations" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="194759" time="0" location="C:\Users\Nomak\.ivy2\cache\org.hibernate\hibernate-commons-annotations\docs\hibernate-commons-annotations-3.2.0.Final-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hibernate/hibernate-commons-annotations/3.2.0.Final/hibernate-commons-annotations-3.2.0.Final-javadoc.jar"/>
 					</artifact>
-					<artifact name="hibernate-commons-annotations" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="60183" time="917" location="C:\Users\Nomak\.ivy2\cache\org.hibernate\hibernate-commons-annotations\srcs\hibernate-commons-annotations-3.2.0.Final-sources.jar">
+					<artifact name="hibernate-commons-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="60183" time="0" location="C:\Users\Nomak\.ivy2\cache\org.hibernate\hibernate-commons-annotations\srcs\hibernate-commons-annotations-3.2.0.Final-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hibernate/hibernate-commons-annotations/3.2.0.Final/hibernate-commons-annotations-3.2.0.Final-sources.jar"/>
 					</artifact>
 					<artifact name="hibernate-commons-annotations" type="jar" ext="jar" status="no" details="" size="71283" time="0" location="C:\Users\Nomak\.ivy2\cache\org.hibernate\hibernate-commons-annotations\jars\hibernate-commons-annotations-3.2.0.Final.jar">
@@ -125,32 +121,31 @@
 			</revision>
 		</module>
 		<module organisation="commons-collections" name="commons-collections">
-			<revision name="3.1" status="release" pubdate="20051108233131" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="58">
+			<revision name="3.1" status="release" pubdate="20051108233131" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="57">
 				<metadata-artifact status="no" details="" size="2537" time="0" location="C:\Users\Nomak\.ivy2\cache\commons-collections\commons-collections\ivy-3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-collections/commons-collections/3.1/commons-collections-3.1.pom"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="commons-collections" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="584056" time="1294" location="C:\Users\Nomak\.ivy2\cache\commons-collections\commons-collections\srcs\commons-collections-3.1-sources.jar">
+					<artifact name="commons-collections" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="584056" time="0" location="C:\Users\Nomak\.ivy2\cache\commons-collections\commons-collections\srcs\commons-collections-3.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-collections/commons-collections/3.1/commons-collections-3.1-sources.jar"/>
 					</artifact>
 					<artifact name="commons-collections" type="jar" ext="jar" status="no" details="" size="559366" time="0" location="C:\Users\Nomak\.ivy2\cache\commons-collections\commons-collections\jars\commons-collections-3.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-collections/commons-collections/3.1/commons-collections-3.1.jar"/>
 					</artifact>
-					<artifact name="commons-collections" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1860199" time="5157" location="C:\Users\Nomak\.ivy2\cache\commons-collections\commons-collections\docs\commons-collections-3.1-javadoc.jar">
+					<artifact name="commons-collections" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1860199" time="0" location="C:\Users\Nomak\.ivy2\cache\commons-collections\commons-collections\docs\commons-collections-3.1-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-collections/commons-collections/3.1/commons-collections-3.1-javadoc.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="antlr" name="antlr">
-			<revision name="2.7.6" status="release" pubdate="20060131023534" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.antlr.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="57">
+			<revision name="2.7.6" status="release" pubdate="20060131023534" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.antlr.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="56">
 				<metadata-artifact status="no" details="" size="2223" time="0" location="C:\Users\Nomak\.ivy2\cache\antlr\antlr\ivy-2.7.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/antlr/antlr/2.7.6/antlr-2.7.6.pom"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="2.7.6" rev-constraint-default="2.7.6" rev-constraint-dynamic="2.7.6" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
 					<artifact name="antlr" type="jar" ext="jar" status="no" details="" size="443432" time="0" location="C:\Users\Nomak\.ivy2\cache\antlr\antlr\jars\antlr-2.7.6.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/antlr/antlr/2.7.6/antlr-2.7.6.jar"/>
 					</artifact>
-					<artifact name="antlr" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
-					<artifact name="antlr" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="436285" time="1982" location="C:\Users\Nomak\.ivy2\cache\antlr\antlr\srcs\antlr-2.7.6-sources.jar">
+					<artifact name="antlr" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="436285" time="0" location="C:\Users\Nomak\.ivy2\cache\antlr\antlr\srcs\antlr-2.7.6-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/antlr/antlr/2.7.6/antlr-2.7.6-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -165,17 +160,17 @@
 					<artifact name="play-java-jpa_2.11" type="jar" ext="jar" status="no" details="" size="8649" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-java-jpa_2.11\jars\play-java-jpa_2.11-2.3.9.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-java-jpa_2.11/2.3.9/play-java-jpa_2.11-2.3.9.jar"/>
 					</artifact>
-					<artifact name="play-java-jpa_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="4290" time="635" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-java-jpa_2.11\srcs\play-java-jpa_2.11-2.3.9-sources.jar">
+					<artifact name="play-java-jpa_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4290" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-java-jpa_2.11\srcs\play-java-jpa_2.11-2.3.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-java-jpa_2.11/2.3.9/play-java-jpa_2.11-2.3.9-sources.jar"/>
 					</artifact>
-					<artifact name="play-java-jpa_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="40385" time="992" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-java-jpa_2.11\docs\play-java-jpa_2.11-2.3.9-javadoc.jar">
+					<artifact name="play-java-jpa_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="40385" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-java-jpa_2.11\docs\play-java-jpa_2.11-2.3.9-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-java-jpa_2.11/2.3.9/play-java-jpa_2.11-2.3.9-javadoc.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.hibernate.javax.persistence" name="hibernate-jpa-2.0-api">
-			<revision name="1.0.1.Final" status="release" pubdate="20110615044226" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hibernate.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="54">
+			<revision name="1.0.1.Final" status="release" pubdate="20110615044226" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hibernate.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="53">
 				<license name="Unknown License" url="license.txt"/>
 				<metadata-artifact status="no" details="" size="2495" time="0" location="C:\Users\Nomak\.ivy2\cache\org.hibernate.javax.persistence\hibernate-jpa-2.0-api\ivy-1.0.1.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final.pom"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="1.0.1.Final" rev-constraint-default="1.0.1.Final" rev-constraint-dynamic="1.0.1.Final" callerrev="1.0-SNAPSHOT"/>
@@ -183,8 +178,7 @@
 					<artifact name="hibernate-jpa-2.0-api" type="jar" ext="jar" status="no" details="" size="102661" time="0" location="C:\Users\Nomak\.ivy2\cache\org.hibernate.javax.persistence\hibernate-jpa-2.0-api\jars\hibernate-jpa-2.0-api-1.0.1.Final.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
 					</artifact>
-					<artifact name="hibernate-jpa-2.0-api" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
-					<artifact name="hibernate-jpa-2.0-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="194469" time="1545" location="C:\Users\Nomak\.ivy2\cache\org.hibernate.javax.persistence\hibernate-jpa-2.0-api\srcs\hibernate-jpa-2.0-api-1.0.1.Final-sources.jar">
+					<artifact name="hibernate-jpa-2.0-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="194469" time="0" location="C:\Users\Nomak\.ivy2\cache\org.hibernate.javax.persistence\hibernate-jpa-2.0-api\srcs\hibernate-jpa-2.0-api-1.0.1.Final-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -199,10 +193,10 @@
 					<artifact name="play-java-jdbc_2.11" type="jar" ext="jar" status="no" details="" size="1168" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.3.9.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-java-jdbc_2.11/2.3.9/play-java-jdbc_2.11-2.3.9.jar"/>
 					</artifact>
-					<artifact name="play-java-jdbc_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="32174" time="1205" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\docs\play-java-jdbc_2.11-2.3.9-javadoc.jar">
+					<artifact name="play-java-jdbc_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="32174" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\docs\play-java-jdbc_2.11-2.3.9-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-java-jdbc_2.11/2.3.9/play-java-jdbc_2.11-2.3.9-javadoc.jar"/>
 					</artifact>
-					<artifact name="play-java-jdbc_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1367" time="732" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\srcs\play-java-jdbc_2.11-2.3.9-sources.jar">
+					<artifact name="play-java-jdbc_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1367" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\srcs\play-java-jdbc_2.11-2.3.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-java-jdbc_2.11/2.3.9/play-java-jdbc_2.11-2.3.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -214,27 +208,14 @@
 				<metadata-artifact status="no" details="" size="3871" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\ivy-2.3.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc_2.11/2.3.9/play-jdbc_2.11-2.3.9.pom"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="2.3.9" rev-constraint-default="2.3.9" rev-constraint-dynamic="2.3.9" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="play-jdbc_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="12758" time="704" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\srcs\play-jdbc_2.11-2.3.9-sources.jar">
+					<artifact name="play-jdbc_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="12758" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\srcs\play-jdbc_2.11-2.3.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc_2.11/2.3.9/play-jdbc_2.11-2.3.9-sources.jar"/>
 					</artifact>
 					<artifact name="play-jdbc_2.11" type="jar" ext="jar" status="no" details="" size="197550" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.9.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc_2.11/2.3.9/play-jdbc_2.11-2.3.9.jar"/>
 					</artifact>
-					<artifact name="play-jdbc_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="394474" time="1798" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\docs\play-jdbc_2.11-2.3.9-javadoc.jar">
+					<artifact name="play-jdbc_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="394474" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\docs\play-jdbc_2.11-2.3.9-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc_2.11/2.3.9/play-jdbc_2.11-2.3.9-javadoc.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="tyrex" name="tyrex">
-			<revision name="1.0.1" status="release" pubdate="20150225143117" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="53">
-				<metadata-artifact status="no" details="" size="2167" time="0" location="C:\Users\Nomak\.ivy2\cache\tyrex\tyrex\ivy-1.0.1.xml" searched="false" origin-is-local="true" origin-location="D:\typesafe_activator\activator-dist-1.3.5\repository\tyrex\tyrex\1.0.1\ivys\ivy.xml"/>
-				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.0-SNAPSHOT"/>
-				<artifacts>
-					<artifact name="tyrex" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
-					<artifact name="tyrex" type="src" ext="jar" extra-classifier="sources" status="failed" details="" size="0" time="0"/>
-					<artifact name="tyrex" type="jar" ext="jar" status="no" details="" size="201315" time="0" location="D:\typesafe_activator\activator-dist-1.3.5\repository\tyrex\tyrex\1.0.1\jars\tyrex.jar">
-						<origin-location is-local="true" location="D:\typesafe_activator\activator-dist-1.3.5\repository\tyrex\tyrex\1.0.1\jars\tyrex.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -251,7 +232,7 @@
 					<artifact name="h2" type="jar" ext="jar" status="no" details="" size="1638306" time="0" location="C:\Users\Nomak\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar">
 						<origin-location is-local="false" location="file:/D:/typesafe_activator/activator-dist-1.3.5/repository/com.h2database/h2/1.3.175/jars/h2.jar"/>
 					</artifact>
-					<artifact name="h2" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="3391275" time="15419" location="C:\Users\Nomak\.ivy2\cache\com.h2database\h2\docs\h2-1.3.175-javadoc.jar">
+					<artifact name="h2" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="3391275" time="0" location="C:\Users\Nomak\.ivy2\cache\com.h2database\h2\docs\h2-1.3.175-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/h2database/h2/1.3.175/h2-1.3.175-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -262,13 +243,13 @@
 				<metadata-artifact status="no" details="" size="9250" time="0" location="C:\Users\Nomak\.ivy2\cache\com.jolbox\bonecp\ivy-0.8.0.RELEASE.xml" searched="false" origin-is-local="true" origin-location="D:\typesafe_activator\activator-dist-1.3.5\repository\com.jolbox\bonecp\0.8.0.RELEASE\ivys\ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="0.8.0.RELEASE" rev-constraint-default="0.8.0.RELEASE" rev-constraint-dynamic="0.8.0.RELEASE" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="bonecp" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="101324" time="727" location="C:\Users\Nomak\.ivy2\cache\com.jolbox\bonecp\srcs\bonecp-0.8.0.RELEASE-sources.jar">
+					<artifact name="bonecp" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="101324" time="0" location="C:\Users\Nomak\.ivy2\cache\com.jolbox\bonecp\srcs\bonecp-0.8.0.RELEASE-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/jolbox/bonecp/0.8.0.RELEASE/bonecp-0.8.0.RELEASE-sources.jar"/>
 					</artifact>
-					<artifact name="bonecp" type="jar" ext="jar" status="successful" details="" size="110600" time="696" location="C:\Users\Nomak\.ivy2\cache\com.jolbox\bonecp\jars\bonecp-0.8.0.RELEASE.jar">
+					<artifact name="bonecp" type="jar" ext="jar" status="no" details="" size="110600" time="0" location="C:\Users\Nomak\.ivy2\cache\com.jolbox\bonecp\jars\bonecp-0.8.0.RELEASE.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/jolbox/bonecp/0.8.0.RELEASE/bonecp-0.8.0.RELEASE.jar"/>
 					</artifact>
-					<artifact name="bonecp" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="330721" time="1456" location="C:\Users\Nomak\.ivy2\cache\com.jolbox\bonecp\docs\bonecp-0.8.0.RELEASE-javadoc.jar">
+					<artifact name="bonecp" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="330721" time="0" location="C:\Users\Nomak\.ivy2\cache\com.jolbox\bonecp\docs\bonecp-0.8.0.RELEASE-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/jolbox/bonecp/0.8.0.RELEASE/bonecp-0.8.0.RELEASE-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -280,13 +261,13 @@
 				<metadata-artifact status="no" details="" size="6412" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-java_2.11\ivy-2.3.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-java_2.11/2.3.9/play-java_2.11-2.3.9.pom"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="2.3.9" rev-constraint-default="2.3.9" rev-constraint-dynamic="2.3.9" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="play-java_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="419530" time="1863" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-java_2.11\docs\play-java_2.11-2.3.9-javadoc.jar">
+					<artifact name="play-java_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="419530" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-java_2.11\docs\play-java_2.11-2.3.9-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-java_2.11/2.3.9/play-java_2.11-2.3.9-javadoc.jar"/>
 					</artifact>
 					<artifact name="play-java_2.11" type="jar" ext="jar" status="no" details="" size="83592" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.3.9.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-java_2.11/2.3.9/play-java_2.11-2.3.9.jar"/>
 					</artifact>
-					<artifact name="play-java_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="38407" time="829" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-java_2.11\srcs\play-java_2.11-2.3.9-sources.jar">
+					<artifact name="play-java_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="38407" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-java_2.11\srcs\play-java_2.11-2.3.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-java_2.11/2.3.9/play-java_2.11-2.3.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -298,13 +279,12 @@
 				<metadata-artifact status="no" details="" size="2573" time="0" location="C:\Users\Nomak\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\ivy-8.0.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/tomcat/tomcat-servlet-api/8.0.5/tomcat-servlet-api-8.0.5.pom"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="8.0.5" rev-constraint-default="8.0.5" rev-constraint-dynamic="8.0.5" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="tomcat-servlet-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="303695" time="5666" location="C:\Users\Nomak\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\srcs\tomcat-servlet-api-8.0.5-sources.jar">
+					<artifact name="tomcat-servlet-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="303695" time="0" location="C:\Users\Nomak\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\srcs\tomcat-servlet-api-8.0.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/tomcat/tomcat-servlet-api/8.0.5/tomcat-servlet-api-8.0.5-sources.jar"/>
 					</artifact>
 					<artifact name="tomcat-servlet-api" type="jar" ext="jar" status="no" details="" size="243533" time="0" location="C:\Users\Nomak\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\jars\tomcat-servlet-api-8.0.5.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/tomcat/tomcat-servlet-api/8.0.5/tomcat-servlet-api-8.0.5.jar"/>
 					</artifact>
-					<artifact name="tomcat-servlet-api" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
 				</artifacts>
 			</revision>
 		</module>
@@ -314,13 +294,13 @@
 				<metadata-artifact status="no" details="" size="2386" time="0" location="C:\Users\Nomak\.ivy2\cache\com.google.code.findbugs\jsr305\ivy-2.0.3.xml" searched="false" origin-is-local="true" origin-location="D:\typesafe_activator\activator-dist-1.3.5\repository\com.google.code.findbugs\jsr305\2.0.3\ivys\ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="2.0.3" rev-constraint-default="2.0.3" rev-constraint-dynamic="2.0.3" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jsr305" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="362" time="820" location="C:\Users\Nomak\.ivy2\cache\com.google.code.findbugs\jsr305\docs\jsr305-2.0.3-javadoc.jar">
+					<artifact name="jsr305" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="362" time="0" location="C:\Users\Nomak\.ivy2\cache\com.google.code.findbugs\jsr305\docs\jsr305-2.0.3-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/2.0.3/jsr305-2.0.3-javadoc.jar"/>
 					</artifact>
 					<artifact name="jsr305" type="jar" ext="jar" status="no" details="" size="33031" time="0" location="D:\typesafe_activator\activator-dist-1.3.5\repository\com.google.code.findbugs\jsr305\2.0.3\jars\jsr305.jar">
 						<origin-location is-local="true" location="D:\typesafe_activator\activator-dist-1.3.5\repository\com.google.code.findbugs\jsr305\2.0.3\jars\jsr305.jar"/>
 					</artifact>
-					<artifact name="jsr305" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="362" time="494" location="C:\Users\Nomak\.ivy2\cache\com.google.code.findbugs\jsr305\srcs\jsr305-2.0.3-sources.jar">
+					<artifact name="jsr305" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="362" time="0" location="C:\Users\Nomak\.ivy2\cache\com.google.code.findbugs\jsr305\srcs\jsr305-2.0.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/2.0.3/jsr305-2.0.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -334,10 +314,10 @@
 					<artifact name="reflections" type="jar" ext="jar" status="no" details="" size="102696" time="0" location="C:\Users\Nomak\.ivy2\cache\org.reflections\reflections\jars\reflections-0.9.8.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/reflections/reflections/0.9.8/reflections-0.9.8.jar"/>
 					</artifact>
-					<artifact name="reflections" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="279453" time="2069" location="C:\Users\Nomak\.ivy2\cache\org.reflections\reflections\docs\reflections-0.9.8-javadoc.jar">
+					<artifact name="reflections" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="279453" time="0" location="C:\Users\Nomak\.ivy2\cache\org.reflections\reflections\docs\reflections-0.9.8-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/reflections/reflections/0.9.8/reflections-0.9.8-javadoc.jar"/>
 					</artifact>
-					<artifact name="reflections" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="43272" time="932" location="C:\Users\Nomak\.ivy2\cache\org.reflections\reflections\srcs\reflections-0.9.8-sources.jar">
+					<artifact name="reflections" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="43272" time="0" location="C:\Users\Nomak\.ivy2\cache\org.reflections\reflections\srcs\reflections-0.9.8-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/reflections/reflections/0.9.8/reflections-0.9.8-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -351,13 +331,13 @@
 				<metadata-artifact status="no" details="" size="3062" time="0" location="C:\Users\Nomak\.ivy2\cache\org.javassist\javassist\ivy-3.19.0-GA.xml" searched="false" origin-is-local="true" origin-location="D:\typesafe_activator\activator-dist-1.3.5\repository\org.javassist\javassist\3.19.0-GA\ivys\ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="3.19.0-GA" rev-constraint-default="3.19.0-GA" rev-constraint-dynamic="3.19.0-GA" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="javassist" type="jar" ext="jar" status="successful" details="" size="749499" time="4789" location="C:\Users\Nomak\.ivy2\cache\org.javassist\javassist\jars\javassist-3.19.0-GA.jar">
+					<artifact name="javassist" type="jar" ext="jar" status="no" details="" size="749499" time="0" location="C:\Users\Nomak\.ivy2\cache\org.javassist\javassist\jars\javassist-3.19.0-GA.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/javassist/javassist/3.19.0-GA/javassist-3.19.0-GA.jar"/>
 					</artifact>
-					<artifact name="javassist" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="519277" time="2457" location="C:\Users\Nomak\.ivy2\cache\org.javassist\javassist\srcs\javassist-3.19.0-GA-sources.jar">
+					<artifact name="javassist" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="519277" time="0" location="C:\Users\Nomak\.ivy2\cache\org.javassist\javassist\srcs\javassist-3.19.0-GA-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/javassist/javassist/3.19.0-GA/javassist-3.19.0-GA-sources.jar"/>
 					</artifact>
-					<artifact name="javassist" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1778990" time="6928" location="C:\Users\Nomak\.ivy2\cache\org.javassist\javassist\docs\javassist-3.19.0-GA-javadoc.jar">
+					<artifact name="javassist" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1778990" time="0" location="C:\Users\Nomak\.ivy2\cache\org.javassist\javassist\docs\javassist-3.19.0-GA-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/javassist/javassist/3.19.0-GA/javassist-3.19.0-GA-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -369,13 +349,13 @@
 				<metadata-artifact status="no" details="" size="4673" time="0" location="C:\Users\Nomak\.ivy2\cache\org.springframework\spring-context\ivy-4.0.3.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/springframework/spring-context/4.0.3.RELEASE/spring-context-4.0.3.RELEASE.pom"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="4.0.3.RELEASE" rev-constraint-default="4.0.3.RELEASE" rev-constraint-dynamic="4.0.3.RELEASE" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="spring-context" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="900787" time="2298" location="C:\Users\Nomak\.ivy2\cache\org.springframework\spring-context\srcs\spring-context-4.0.3.RELEASE-sources.jar">
+					<artifact name="spring-context" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="900787" time="0" location="C:\Users\Nomak\.ivy2\cache\org.springframework\spring-context\srcs\spring-context-4.0.3.RELEASE-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/springframework/spring-context/4.0.3.RELEASE/spring-context-4.0.3.RELEASE-sources.jar"/>
 					</artifact>
 					<artifact name="spring-context" type="jar" ext="jar" status="no" details="" size="974938" time="0" location="C:\Users\Nomak\.ivy2\cache\org.springframework\spring-context\jars\spring-context-4.0.3.RELEASE.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/springframework/spring-context/4.0.3.RELEASE/spring-context-4.0.3.RELEASE.jar"/>
 					</artifact>
-					<artifact name="spring-context" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="2328193" time="2529" location="C:\Users\Nomak\.ivy2\cache\org.springframework\spring-context\docs\spring-context-4.0.3.RELEASE-javadoc.jar">
+					<artifact name="spring-context" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="2328193" time="0" location="C:\Users\Nomak\.ivy2\cache\org.springframework\spring-context\docs\spring-context-4.0.3.RELEASE-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/springframework/spring-context/4.0.3.RELEASE/spring-context-4.0.3.RELEASE-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -387,13 +367,13 @@
 				<metadata-artifact status="no" details="" size="3002" time="0" location="C:\Users\Nomak\.ivy2\cache\org.springframework\spring-beans\ivy-4.0.3.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/springframework/spring-beans/4.0.3.RELEASE/spring-beans-4.0.3.RELEASE.pom"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="4.0.3.RELEASE" rev-constraint-default="4.0.3.RELEASE" rev-constraint-dynamic="4.0.3.RELEASE" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="spring-beans" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1384358" time="10859" location="C:\Users\Nomak\.ivy2\cache\org.springframework\spring-beans\docs\spring-beans-4.0.3.RELEASE-javadoc.jar">
+					<artifact name="spring-beans" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1384358" time="0" location="C:\Users\Nomak\.ivy2\cache\org.springframework\spring-beans\docs\spring-beans-4.0.3.RELEASE-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/springframework/spring-beans/4.0.3.RELEASE/spring-beans-4.0.3.RELEASE-javadoc.jar"/>
 					</artifact>
 					<artifact name="spring-beans" type="jar" ext="jar" status="no" details="" size="669978" time="0" location="C:\Users\Nomak\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-4.0.3.RELEASE.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/springframework/spring-beans/4.0.3.RELEASE/spring-beans-4.0.3.RELEASE.jar"/>
 					</artifact>
-					<artifact name="spring-beans" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="567353" time="3526" location="C:\Users\Nomak\.ivy2\cache\org.springframework\spring-beans\srcs\spring-beans-4.0.3.RELEASE-sources.jar">
+					<artifact name="spring-beans" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="567353" time="0" location="C:\Users\Nomak\.ivy2\cache\org.springframework\spring-beans\srcs\spring-beans-4.0.3.RELEASE-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/springframework/spring-beans/4.0.3.RELEASE/spring-beans-4.0.3.RELEASE-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -405,10 +385,10 @@
 				<metadata-artifact status="no" details="" size="2984" time="0" location="C:\Users\Nomak\.ivy2\cache\org.springframework\spring-core\ivy-4.0.3.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/springframework/spring-core/4.0.3.RELEASE/spring-core-4.0.3.RELEASE.pom"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="4.0.3.RELEASE" rev-constraint-default="4.0.3.RELEASE" rev-constraint-dynamic="4.0.3.RELEASE" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="spring-core" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1284728" time="7101" location="C:\Users\Nomak\.ivy2\cache\org.springframework\spring-core\docs\spring-core-4.0.3.RELEASE-javadoc.jar">
+					<artifact name="spring-core" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1284728" time="0" location="C:\Users\Nomak\.ivy2\cache\org.springframework\spring-core\docs\spring-core-4.0.3.RELEASE-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/springframework/spring-core/4.0.3.RELEASE/spring-core-4.0.3.RELEASE-javadoc.jar"/>
 					</artifact>
-					<artifact name="spring-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="622166" time="4350" location="C:\Users\Nomak\.ivy2\cache\org.springframework\spring-core\srcs\spring-core-4.0.3.RELEASE-sources.jar">
+					<artifact name="spring-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="622166" time="0" location="C:\Users\Nomak\.ivy2\cache\org.springframework\spring-core\srcs\spring-core-4.0.3.RELEASE-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/springframework/spring-core/4.0.3.RELEASE/spring-core-4.0.3.RELEASE-sources.jar"/>
 					</artifact>
 					<artifact name="spring-core" type="jar" ext="jar" status="no" details="" size="973502" time="0" location="C:\Users\Nomak\.ivy2\cache\org.springframework\spring-core\jars\spring-core-4.0.3.RELEASE.jar">
@@ -423,11 +403,10 @@
 				<metadata-artifact status="no" details="" size="9463" time="0" location="C:\Users\Nomak\.ivy2\cache\org.jboss.logging\jboss-logging\ivy-3.2.0.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jboss/logging/jboss-logging/3.2.0.Final/jboss-logging-3.2.0.Final.pom"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="3.2.0.Final" rev-constraint-default="3.2.0.Final" rev-constraint-dynamic="3.2.0.Final" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jboss-logging" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
 					<artifact name="jboss-logging" type="jar" ext="jar" status="no" details="" size="66832" time="0" location="C:\Users\Nomak\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.2.0.Final.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jboss/logging/jboss-logging/3.2.0.Final/jboss-logging-3.2.0.Final.jar"/>
 					</artifact>
-					<artifact name="jboss-logging" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="51702" time="858" location="C:\Users\Nomak\.ivy2\cache\org.jboss.logging\jboss-logging\srcs\jboss-logging-3.2.0.Final-sources.jar">
+					<artifact name="jboss-logging" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="51702" time="0" location="C:\Users\Nomak\.ivy2\cache\org.jboss.logging\jboss-logging\srcs\jboss-logging-3.2.0.Final-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jboss/logging/jboss-logging/3.2.0.Final/jboss-logging-3.2.0.Final-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -441,10 +420,10 @@
 					<artifact name="hibernate-validator" type="jar" ext="jar" status="no" details="" size="574278" time="0" location="D:\typesafe_activator\activator-dist-1.3.5\repository\org.hibernate\hibernate-validator\5.0.3.Final\jars\hibernate-validator.jar">
 						<origin-location is-local="true" location="D:\typesafe_activator\activator-dist-1.3.5\repository\org.hibernate\hibernate-validator\5.0.3.Final\jars\hibernate-validator.jar"/>
 					</artifact>
-					<artifact name="hibernate-validator" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1889804" time="8237" location="C:\Users\Nomak\.ivy2\cache\org.hibernate\hibernate-validator\docs\hibernate-validator-5.0.3.Final-javadoc.jar">
+					<artifact name="hibernate-validator" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1889804" time="0" location="C:\Users\Nomak\.ivy2\cache\org.hibernate\hibernate-validator\docs\hibernate-validator-5.0.3.Final-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hibernate/hibernate-validator/5.0.3.Final/hibernate-validator-5.0.3.Final-javadoc.jar"/>
 					</artifact>
-					<artifact name="hibernate-validator" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="504486" time="2804" location="C:\Users\Nomak\.ivy2\cache\org.hibernate\hibernate-validator\srcs\hibernate-validator-5.0.3.Final-sources.jar">
+					<artifact name="hibernate-validator" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="504486" time="0" location="C:\Users\Nomak\.ivy2\cache\org.hibernate\hibernate-validator\srcs\hibernate-validator-5.0.3.Final-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hibernate/hibernate-validator/5.0.3.Final/hibernate-validator-5.0.3.Final-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -456,13 +435,13 @@
 				<metadata-artifact status="no" details="" size="3250" time="0" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml\classmate\ivy-1.0.0.xml" searched="false" origin-is-local="true" origin-location="D:\typesafe_activator\activator-dist-1.3.5\repository\com.fasterxml\classmate\1.0.0\ivys\ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="classmate" type="jar" ext="jar" status="successful" details="" size="60282" time="736" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml\classmate\jars\classmate-1.0.0.jar">
+					<artifact name="classmate" type="jar" ext="jar" status="no" details="" size="60282" time="0" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml\classmate\jars\classmate-1.0.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar"/>
 					</artifact>
-					<artifact name="classmate" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="43572" time="709" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml\classmate\srcs\classmate-1.0.0-sources.jar">
+					<artifact name="classmate" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="43572" time="0" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml\classmate\srcs\classmate-1.0.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/classmate/1.0.0/classmate-1.0.0-sources.jar"/>
 					</artifact>
-					<artifact name="classmate" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="264378" time="1564" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml\classmate\docs\classmate-1.0.0-javadoc.jar">
+					<artifact name="classmate" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="264378" time="0" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml\classmate\docs\classmate-1.0.0-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/classmate/1.0.0/classmate-1.0.0-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -474,10 +453,10 @@
 				<metadata-artifact status="no" details="" size="3065" time="0" location="C:\Users\Nomak\.ivy2\cache\javax.validation\validation-api\ivy-1.1.0.Final.xml" searched="false" origin-is-local="true" origin-location="D:\typesafe_activator\activator-dist-1.3.5\repository\javax.validation\validation-api\1.1.0.Final\ivys\ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="1.1.0.Final" rev-constraint-default="1.1.0.Final" rev-constraint-dynamic="1.1.0.Final" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="validation-api" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="536613" time="2701" location="C:\Users\Nomak\.ivy2\cache\javax.validation\validation-api\docs\validation-api-1.1.0.Final-javadoc.jar">
+					<artifact name="validation-api" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="536613" time="0" location="C:\Users\Nomak\.ivy2\cache\javax.validation\validation-api\docs\validation-api-1.1.0.Final-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final-javadoc.jar"/>
 					</artifact>
-					<artifact name="validation-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="94671" time="885" location="C:\Users\Nomak\.ivy2\cache\javax.validation\validation-api\srcs\validation-api-1.1.0.Final-sources.jar">
+					<artifact name="validation-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="94671" time="0" location="C:\Users\Nomak\.ivy2\cache\javax.validation\validation-api\srcs\validation-api-1.1.0.Final-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final-sources.jar"/>
 					</artifact>
 					<artifact name="validation-api" type="jar" ext="jar" status="no" details="" size="63777" time="0" location="D:\typesafe_activator\activator-dist-1.3.5\repository\javax.validation\validation-api\1.1.0.Final\jars\validation-api.jar">
@@ -492,13 +471,13 @@
 				<metadata-artifact status="no" details="" size="3469" time="0" location="C:\Users\Nomak\.ivy2\cache\org.yaml\snakeyaml\ivy-1.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.13/snakeyaml-1.13.pom"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="1.13" rev-constraint-default="1.13" rev-constraint-dynamic="1.13" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="snakeyaml" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="783138" time="3341" location="C:\Users\Nomak\.ivy2\cache\org.yaml\snakeyaml\docs\snakeyaml-1.13-javadoc.jar">
+					<artifact name="snakeyaml" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="783138" time="0" location="C:\Users\Nomak\.ivy2\cache\org.yaml\snakeyaml\docs\snakeyaml-1.13-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.13/snakeyaml-1.13-javadoc.jar"/>
 					</artifact>
-					<artifact name="snakeyaml" type="jar" ext="jar" status="successful" details="" size="273449" time="1671" location="C:\Users\Nomak\.ivy2\cache\org.yaml\snakeyaml\jars\snakeyaml-1.13.jar">
+					<artifact name="snakeyaml" type="jar" ext="jar" status="no" details="" size="273449" time="0" location="C:\Users\Nomak\.ivy2\cache\org.yaml\snakeyaml\jars\snakeyaml-1.13.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.13/snakeyaml-1.13.jar"/>
 					</artifact>
-					<artifact name="snakeyaml" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="173523" time="1311" location="C:\Users\Nomak\.ivy2\cache\org.yaml\snakeyaml\srcs\snakeyaml-1.13-sources.jar">
+					<artifact name="snakeyaml" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="173523" time="0" location="C:\Users\Nomak\.ivy2\cache\org.yaml\snakeyaml\srcs\snakeyaml-1.13-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.13/snakeyaml-1.13-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -510,13 +489,13 @@
 				<metadata-artifact status="no" details="" size="7534" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play_2.11\ivy-2.3.9.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/com.typesafe.play/play_2.11/2.3.9/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="2.3.9" rev-constraint-default="2.3.9" rev-constraint-dynamic="2.3.9" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="play_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="385920" time="2844" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play_2.11\srcs\play_2.11-2.3.9-sources.jar">
+					<artifact name="play_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="385920" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play_2.11\srcs\play_2.11-2.3.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play_2.11/2.3.9/play_2.11-2.3.9-sources.jar"/>
 					</artifact>
 					<artifact name="play_2.11" type="jar" ext="jar" status="no" details="" size="3773088" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.9.jar">
 						<origin-location is-local="false" location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/com.typesafe.play/play_2.11/2.3.9/jars/play_2.11.jar"/>
 					</artifact>
-					<artifact name="play_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1959596" time="10798" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play_2.11\docs\play_2.11-2.3.9-javadoc.jar">
+					<artifact name="play_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1959596" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play_2.11\docs\play_2.11-2.3.9-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play_2.11/2.3.9/play_2.11-2.3.9-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -527,10 +506,10 @@
 				<metadata-artifact status="no" details="" size="5919" time="0" location="C:\Users\Nomak\.ivy2\cache\com.google.guava\guava\ivy-16.0.1.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/com.google.guava/guava/16.0.1/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="16.0.1" rev-constraint-default="16.0.1" rev-constraint-dynamic="16.0.1" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="guava" type="jar" ext="jar" status="successful" details="" size="2228009" time="11535" location="C:\Users\Nomak\.ivy2\cache\com.google.guava\guava\jars\guava-16.0.1.jar">
+					<artifact name="guava" type="jar" ext="jar" status="no" details="" size="2228009" time="0" location="C:\Users\Nomak\.ivy2\cache\com.google.guava\guava\jars\guava-16.0.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.jar"/>
 					</artifact>
-					<artifact name="guava" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="5166582" time="26119" location="C:\Users\Nomak\.ivy2\cache\com.google.guava\guava\docs\guava-16.0.1-javadoc.jar">
+					<artifact name="guava" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="5166582" time="0" location="C:\Users\Nomak\.ivy2\cache\com.google.guava\guava\docs\guava-16.0.1-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1-javadoc.jar"/>
 					</artifact>
 					<artifact name="guava" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1261127" time="0" location="C:\Users\Nomak\.ivy2\cache\com.google.guava\guava\srcs\guava-16.0.1-sources.jar">
@@ -544,10 +523,9 @@
 				<metadata-artifact status="no" details="" size="2345" time="0" location="C:\Users\Nomak\.ivy2\cache\javax.transaction\jta\ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/javax.transaction/jta/1.1/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jta" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="25014" time="785" location="C:\Users\Nomak\.ivy2\cache\javax.transaction\jta\srcs\jta-1.1-sources.jar">
+					<artifact name="jta" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="25014" time="0" location="C:\Users\Nomak\.ivy2\cache\javax.transaction\jta\srcs\jta-1.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/transaction/jta/1.1/jta-1.1-sources.jar"/>
 					</artifact>
-					<artifact name="jta" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
 					<artifact name="jta" type="jar" ext="jar" status="no" details="" size="15071" time="0" location="C:\Users\Nomak\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar">
 						<origin-location is-local="false" location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/javax.transaction/jta/1.1/jars/jta.jar"/>
 					</artifact>
@@ -560,7 +538,7 @@
 				<metadata-artifact status="no" details="" size="4251" time="0" location="C:\Users\Nomak\.ivy2\cache\xerces\xercesImpl\ivy-2.11.0.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/xerces/xercesImpl/2.11.0/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="xercesImpl" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="2136909" time="5189" location="C:\Users\Nomak\.ivy2\cache\xerces\xercesImpl\docs\xercesImpl-2.11.0-javadoc.jar">
+					<artifact name="xercesImpl" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="2136909" time="0" location="C:\Users\Nomak\.ivy2\cache\xerces\xercesImpl\docs\xercesImpl-2.11.0-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0-javadoc.jar"/>
 					</artifact>
 					<artifact name="xercesImpl" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2081596" time="0" location="C:\Users\Nomak\.ivy2\cache\xerces\xercesImpl\srcs\xercesImpl-2.11.0-sources.jar">
@@ -580,7 +558,7 @@
 				<metadata-artifact status="no" details="" size="3121" time="0" location="C:\Users\Nomak\.ivy2\cache\xml-apis\xml-apis\ivy-1.4.01.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/xml-apis/xml-apis/1.4.01/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="1.4.01" rev-constraint-default="1.4.01" rev-constraint-dynamic="1.4.01" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="xml-apis" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1480162" time="6351" location="C:\Users\Nomak\.ivy2\cache\xml-apis\xml-apis\docs\xml-apis-1.4.01-javadoc.jar">
+					<artifact name="xml-apis" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1480162" time="0" location="C:\Users\Nomak\.ivy2\cache\xml-apis\xml-apis\docs\xml-apis-1.4.01-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01-javadoc.jar"/>
 					</artifact>
 					<artifact name="xml-apis" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="656529" time="0" location="C:\Users\Nomak\.ivy2\cache\xml-apis\xml-apis\srcs\xml-apis-1.4.01-sources.jar">
@@ -600,7 +578,7 @@
 					<artifact name="commons-codec" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="278370" time="0" location="C:\Users\Nomak\.ivy2\cache\commons-codec\commons-codec\srcs\commons-codec-1.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9-sources.jar"/>
 					</artifact>
-					<artifact name="commons-codec" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="403357" time="1505" location="C:\Users\Nomak\.ivy2\cache\commons-codec\commons-codec\docs\commons-codec-1.9-javadoc.jar">
+					<artifact name="commons-codec" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="403357" time="0" location="C:\Users\Nomak\.ivy2\cache\commons-codec\commons-codec\docs\commons-codec-1.9-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9-javadoc.jar"/>
 					</artifact>
 					<artifact name="commons-codec" type="jar" ext="jar" status="no" details="" size="263965" time="0" location="C:\Users\Nomak\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar">
@@ -615,10 +593,10 @@
 				<metadata-artifact status="no" details="" size="3034" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\ivy-2.3.4.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/com.typesafe.akka/akka-slf4j_2.11/2.3.4/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="2.3.4" rev-constraint-default="2.3.4" rev-constraint-dynamic="2.3.4" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="akka-slf4j_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="27091" time="727" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\docs\akka-slf4j_2.11-2.3.4-javadoc.jar">
+					<artifact name="akka-slf4j_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="27091" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\docs\akka-slf4j_2.11-2.3.4-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.11/2.3.4/akka-slf4j_2.11-2.3.4-javadoc.jar"/>
 					</artifact>
-					<artifact name="akka-slf4j_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1971" time="809" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\srcs\akka-slf4j_2.11-2.3.4-sources.jar">
+					<artifact name="akka-slf4j_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1971" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\srcs\akka-slf4j_2.11-2.3.4-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.11/2.3.4/akka-slf4j_2.11-2.3.4-sources.jar"/>
 					</artifact>
 					<artifact name="akka-slf4j_2.11" type="jar" ext="jar" status="no" details="" size="15158" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar">
@@ -636,10 +614,10 @@
 					<artifact name="akka-actor_2.11" type="jar" ext="jar" status="no" details="" size="2516692" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.3.4/akka-actor_2.11-2.3.4.jar"/>
 					</artifact>
-					<artifact name="akka-actor_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="2356009" time="5473" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\docs\akka-actor_2.11-2.3.4-javadoc.jar">
+					<artifact name="akka-actor_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="2356009" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\docs\akka-actor_2.11-2.3.4-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.3.4/akka-actor_2.11-2.3.4-javadoc.jar"/>
 					</artifact>
-					<artifact name="akka-actor_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="327598" time="1449" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\srcs\akka-actor_2.11-2.3.4-sources.jar">
+					<artifact name="akka-actor_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="327598" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\srcs\akka-actor_2.11-2.3.4-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.3.4/akka-actor_2.11-2.3.4-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -652,13 +630,13 @@
 				<metadata-artifact status="no" details="" size="11702" time="0" location="C:\Users\Nomak\.ivy2\cache\ch.qos.logback\logback-classic\ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/ch.qos.logback/logback-classic/1.1.1/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="logback-classic" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1015019" time="7183" location="C:\Users\Nomak\.ivy2\cache\ch.qos.logback\logback-classic\docs\logback-classic-1.1.1-javadoc.jar">
+					<artifact name="logback-classic" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1015019" time="0" location="C:\Users\Nomak\.ivy2\cache\ch.qos.logback\logback-classic\docs\logback-classic-1.1.1-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.1/logback-classic-1.1.1-javadoc.jar"/>
 					</artifact>
 					<artifact name="logback-classic" type="jar" ext="jar" status="no" details="" size="270858" time="0" location="C:\Users\Nomak\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar">
 						<origin-location is-local="false" location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/ch.qos.logback/logback-classic/1.1.1/jars/logback-classic.jar"/>
 					</artifact>
-					<artifact name="logback-classic" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="222564" time="1169" location="C:\Users\Nomak\.ivy2\cache\ch.qos.logback\logback-classic\srcs\logback-classic-1.1.1-sources.jar">
+					<artifact name="logback-classic" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="222564" time="0" location="C:\Users\Nomak\.ivy2\cache\ch.qos.logback\logback-classic\srcs\logback-classic-1.1.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.1/logback-classic-1.1.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -669,10 +647,9 @@
 				<metadata-artifact status="no" details="" size="3768" time="0" location="C:\Users\Nomak\.ivy2\cache\dom4j\dom4j\ivy-1.6.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.pom"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="dom4j" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="432186" time="2647" location="C:\Users\Nomak\.ivy2\cache\dom4j\dom4j\srcs\dom4j-1.6.1-sources.jar">
+					<artifact name="dom4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="432186" time="0" location="C:\Users\Nomak\.ivy2\cache\dom4j\dom4j\srcs\dom4j-1.6.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1-sources.jar"/>
 					</artifact>
-					<artifact name="dom4j" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
 					<artifact name="dom4j" type="jar" ext="jar" status="no" details="" size="313898" time="0" location="C:\Users\Nomak\.ivy2\cache\dom4j\dom4j\jars\dom4j-1.6.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar"/>
 					</artifact>
@@ -686,13 +663,13 @@
 				<metadata-artifact status="no" details="" size="9742" time="0" location="C:\Users\Nomak\.ivy2\cache\ch.qos.logback\logback-core\ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/ch.qos.logback/logback-core/1.1.1/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="logback-core" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1865348" time="4637" location="C:\Users\Nomak\.ivy2\cache\ch.qos.logback\logback-core\docs\logback-core-1.1.1-javadoc.jar">
+					<artifact name="logback-core" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1865348" time="0" location="C:\Users\Nomak\.ivy2\cache\ch.qos.logback\logback-core\docs\logback-core-1.1.1-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.1/logback-core-1.1.1-javadoc.jar"/>
 					</artifact>
 					<artifact name="logback-core" type="jar" ext="jar" status="no" details="" size="427794" time="0" location="C:\Users\Nomak\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar">
 						<origin-location is-local="false" location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/ch.qos.logback/logback-core/1.1.1/jars/logback-core.jar"/>
 					</artifact>
-					<artifact name="logback-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="368867" time="1551" location="C:\Users\Nomak\.ivy2\cache\ch.qos.logback\logback-core\srcs\logback-core-1.1.1-sources.jar">
+					<artifact name="logback-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="368867" time="0" location="C:\Users\Nomak\.ivy2\cache\ch.qos.logback\logback-core\srcs\logback-core-1.1.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.1/logback-core-1.1.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -703,13 +680,13 @@
 				<metadata-artifact status="no" details="" size="4723" time="0" location="C:\Users\Nomak\.ivy2\cache\org.slf4j\jcl-over-slf4j\ivy-1.7.6.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/org.slf4j/jcl-over-slf4j/1.7.6/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="1.7.6" rev-constraint-default="1.7.6" rev-constraint-dynamic="1.7.6" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jcl-over-slf4j" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="105508" time="1030" location="C:\Users\Nomak\.ivy2\cache\org.slf4j\jcl-over-slf4j\docs\jcl-over-slf4j-1.7.6-javadoc.jar">
+					<artifact name="jcl-over-slf4j" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="105508" time="0" location="C:\Users\Nomak\.ivy2\cache\org.slf4j\jcl-over-slf4j\docs\jcl-over-slf4j-1.7.6-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.6/jcl-over-slf4j-1.7.6-javadoc.jar"/>
 					</artifact>
 					<artifact name="jcl-over-slf4j" type="jar" ext="jar" status="no" details="" size="16515" time="0" location="C:\Users\Nomak\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar">
 						<origin-location is-local="false" location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/org.slf4j/jcl-over-slf4j/1.7.6/jars/jcl-over-slf4j.jar"/>
 					</artifact>
-					<artifact name="jcl-over-slf4j" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="23044" time="795" location="C:\Users\Nomak\.ivy2\cache\org.slf4j\jcl-over-slf4j\srcs\jcl-over-slf4j-1.7.6-sources.jar">
+					<artifact name="jcl-over-slf4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="23044" time="0" location="C:\Users\Nomak\.ivy2\cache\org.slf4j\jcl-over-slf4j\srcs\jcl-over-slf4j-1.7.6-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.6/jcl-over-slf4j-1.7.6-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -720,13 +697,13 @@
 				<metadata-artifact status="no" details="" size="4762" time="0" location="C:\Users\Nomak\.ivy2\cache\org.slf4j\jul-to-slf4j\ivy-1.7.6.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/org.slf4j/jul-to-slf4j/1.7.6/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="1.7.6" rev-constraint-default="1.7.6" rev-constraint-dynamic="1.7.6" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jul-to-slf4j" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="4806" time="750" location="C:\Users\Nomak\.ivy2\cache\org.slf4j\jul-to-slf4j\srcs\jul-to-slf4j-1.7.6-sources.jar">
+					<artifact name="jul-to-slf4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4806" time="0" location="C:\Users\Nomak\.ivy2\cache\org.slf4j\jul-to-slf4j\srcs\jul-to-slf4j-1.7.6-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.6/jul-to-slf4j-1.7.6-sources.jar"/>
 					</artifact>
 					<artifact name="jul-to-slf4j" type="jar" ext="jar" status="no" details="" size="4959" time="0" location="C:\Users\Nomak\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar">
 						<origin-location is-local="false" location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/org.slf4j/jul-to-slf4j/1.7.6/jars/jul-to-slf4j.jar"/>
 					</artifact>
-					<artifact name="jul-to-slf4j" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="39594" time="1181" location="C:\Users\Nomak\.ivy2\cache\org.slf4j\jul-to-slf4j\docs\jul-to-slf4j-1.7.6-javadoc.jar">
+					<artifact name="jul-to-slf4j" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="39594" time="0" location="C:\Users\Nomak\.ivy2\cache\org.slf4j\jul-to-slf4j\docs\jul-to-slf4j-1.7.6-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.6/jul-to-slf4j-1.7.6-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -737,10 +714,10 @@
 				<metadata-artifact status="no" details="" size="4559" time="0" location="C:\Users\Nomak\.ivy2\cache\org.slf4j\slf4j-api\ivy-1.7.6.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/org.slf4j/slf4j-api/1.7.6/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="1.7.6" rev-constraint-default="1.7.6" rev-constraint-dynamic="1.7.6" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="slf4j-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="49313" time="983" location="C:\Users\Nomak\.ivy2\cache\org.slf4j\slf4j-api\srcs\slf4j-api-1.7.6-sources.jar">
+					<artifact name="slf4j-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="49313" time="0" location="C:\Users\Nomak\.ivy2\cache\org.slf4j\slf4j-api\srcs\slf4j-api-1.7.6-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6-sources.jar"/>
 					</artifact>
-					<artifact name="slf4j-api" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="204280" time="1005" location="C:\Users\Nomak\.ivy2\cache\org.slf4j\slf4j-api\docs\slf4j-api-1.7.6-javadoc.jar">
+					<artifact name="slf4j-api" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="204280" time="0" location="C:\Users\Nomak\.ivy2\cache\org.slf4j\slf4j-api\docs\slf4j-api-1.7.6-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6-javadoc.jar"/>
 					</artifact>
 					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="28688" time="0" location="C:\Users\Nomak\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar">
@@ -755,10 +732,10 @@
 				<metadata-artifact status="no" details="" size="2724" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\ivy-1.1.2.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/com.typesafe.netty/netty-http-pipelining/1.1.2/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="1.1.2" rev-constraint-default="1.1.2" rev-constraint-dynamic="1.1.2" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="netty-http-pipelining" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="3774" time="4757" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\srcs\netty-http-pipelining-1.1.2-sources.jar">
+					<artifact name="netty-http-pipelining" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3774" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\srcs\netty-http-pipelining-1.1.2-sources.jar">
 						<origin-location is-local="false" location="https://repo.typesafe.com/typesafe/releases/com/typesafe/netty/netty-http-pipelining/1.1.2/netty-http-pipelining-1.1.2-sources.jar"/>
 					</artifact>
-					<artifact name="netty-http-pipelining" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="34756" time="3744" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\docs\netty-http-pipelining-1.1.2-javadoc.jar">
+					<artifact name="netty-http-pipelining" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="34756" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\docs\netty-http-pipelining-1.1.2-javadoc.jar">
 						<origin-location is-local="false" location="https://repo.typesafe.com/typesafe/releases/com/typesafe/netty/netty-http-pipelining/1.1.2/netty-http-pipelining-1.1.2-javadoc.jar"/>
 					</artifact>
 					<artifact name="netty-http-pipelining" type="jar" ext="jar" status="no" details="" size="7012" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar">
@@ -773,13 +750,13 @@
 				<metadata-artifact status="no" details="" size="6969" time="0" location="C:\Users\Nomak\.ivy2\cache\io.netty\netty\ivy-3.9.8.Final.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/io.netty/netty/3.9.8.Final/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="3.9.8.Final" rev-constraint-default="3.9.8.Final" rev-constraint-dynamic="3.9.8.Final" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="netty" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="3428929" time="17508" location="C:\Users\Nomak\.ivy2\cache\io.netty\netty\docs\netty-3.9.8.Final-javadoc.jar">
+					<artifact name="netty" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="3428929" time="0" location="C:\Users\Nomak\.ivy2\cache\io.netty\netty\docs\netty-3.9.8.Final-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty/3.9.8.Final/netty-3.9.8.Final-javadoc.jar"/>
 					</artifact>
-					<artifact name="netty" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1156327" time="6694" location="C:\Users\Nomak\.ivy2\cache\io.netty\netty\srcs\netty-3.9.8.Final-sources.jar">
+					<artifact name="netty" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1156327" time="0" location="C:\Users\Nomak\.ivy2\cache\io.netty\netty\srcs\netty-3.9.8.Final-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty/3.9.8.Final/netty-3.9.8.Final-sources.jar"/>
 					</artifact>
-					<artifact name="netty" type="jar" ext="jar" status="successful" details="" size="1330138" time="6797" location="C:\Users\Nomak\.ivy2\cache\io.netty\netty\jars\netty-3.9.8.Final.jar">
+					<artifact name="netty" type="jar" ext="jar" status="no" details="" size="1330138" time="0" location="C:\Users\Nomak\.ivy2\cache\io.netty\netty\jars\netty-3.9.8.Final.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty/3.9.8.Final/netty-3.9.8.Final.jar"/>
 					</artifact>
 				</artifacts>
@@ -791,13 +768,13 @@
 				<metadata-artifact status="no" details="" size="2794" time="0" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/org.scala-lang.modules/scala-parser-combinators_2.11/1.0.1/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="scala-parser-combinators_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="661706" time="3550" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\docs\scala-parser-combinators_2.11-1.0.1-javadoc.jar">
+					<artifact name="scala-parser-combinators_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="661706" time="0" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\docs\scala-parser-combinators_2.11-1.0.1-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.1/scala-parser-combinators_2.11-1.0.1-javadoc.jar"/>
 					</artifact>
-					<artifact name="scala-parser-combinators_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="41398" time="622" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\srcs\scala-parser-combinators_2.11-1.0.1-sources.jar">
+					<artifact name="scala-parser-combinators_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="41398" time="0" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\srcs\scala-parser-combinators_2.11-1.0.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.1/scala-parser-combinators_2.11-1.0.1-sources.jar"/>
 					</artifact>
-					<artifact name="scala-parser-combinators_2.11" type="jar" ext="jar" status="successful" details="" size="419701" time="2171" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\jars\scala-parser-combinators_2.11-1.0.1.jar">
+					<artifact name="scala-parser-combinators_2.11" type="jar" ext="jar" status="no" details="" size="419701" time="0" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\jars\scala-parser-combinators_2.11-1.0.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.1/scala-parser-combinators_2.11-1.0.1.jar"/>
 					</artifact>
 				</artifacts>
@@ -809,10 +786,10 @@
 				<metadata-artifact status="no" details="" size="4499" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-json_2.11\ivy-2.3.9.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/com.typesafe.play/play-json_2.11/2.3.9/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="2.3.9" rev-constraint-default="2.3.9" rev-constraint-dynamic="2.3.9" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="play-json_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="28923" time="787" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-json_2.11\srcs\play-json_2.11-2.3.9-sources.jar">
+					<artifact name="play-json_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="28923" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-json_2.11\srcs\play-json_2.11-2.3.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-json_2.11/2.3.9/play-json_2.11-2.3.9-sources.jar"/>
 					</artifact>
-					<artifact name="play-json_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="661391" time="3441" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-json_2.11\docs\play-json_2.11-2.3.9-javadoc.jar">
+					<artifact name="play-json_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="661391" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-json_2.11\docs\play-json_2.11-2.3.9-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-json_2.11/2.3.9/play-json_2.11-2.3.9-javadoc.jar"/>
 					</artifact>
 					<artifact name="play-json_2.11" type="jar" ext="jar" status="no" details="" size="630454" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.9.jar">
@@ -830,10 +807,10 @@
 					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="4372892" time="0" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.1/scala-reflect-2.11.1.jar"/>
 					</artifact>
-					<artifact name="scala-reflect" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="3616593" time="21530" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang\scala-reflect\docs\scala-reflect-2.11.1-javadoc.jar">
+					<artifact name="scala-reflect" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="3616593" time="0" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang\scala-reflect\docs\scala-reflect-2.11.1-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.1/scala-reflect-2.11.1-javadoc.jar"/>
 					</artifact>
-					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="555369" time="8169" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang\scala-reflect\srcs\scala-reflect-2.11.1-sources.jar">
+					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="555369" time="0" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang\scala-reflect\srcs\scala-reflect-2.11.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.1/scala-reflect-2.11.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -844,13 +821,13 @@
 				<metadata-artifact status="no" details="" size="7215" time="0" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\ivy-2.3.2.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/com.fasterxml.jackson.core/jackson-databind/2.3.2/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jackson-databind" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="4032554" time="13384" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\docs\jackson-databind-2.3.2-javadoc.jar">
+					<artifact name="jackson-databind" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="4032554" time="0" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\docs\jackson-databind-2.3.2-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.3.2/jackson-databind-2.3.2-javadoc.jar"/>
 					</artifact>
-					<artifact name="jackson-databind" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="753006" time="2796" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\srcs\jackson-databind-2.3.2-sources.jar">
+					<artifact name="jackson-databind" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="753006" time="0" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\srcs\jackson-databind-2.3.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.3.2/jackson-databind-2.3.2-sources.jar"/>
 					</artifact>
-					<artifact name="jackson-databind" type="jar" ext="jar" status="successful" details="" size="915096" time="3998" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\jars\jackson-databind-2.3.2.jar">
+					<artifact name="jackson-databind" type="jar" ext="jar" status="no" details="" size="915096" time="0" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\jars\jackson-databind-2.3.2.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.3.2/jackson-databind-2.3.2.jar"/>
 					</artifact>
 				</artifacts>
@@ -861,13 +838,13 @@
 				<metadata-artifact status="no" details="" size="5465" time="0" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\ivy-2.3.2.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/com.fasterxml.jackson.core/jackson-core/2.3.2/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jackson-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="233763" time="1199" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\srcs\jackson-core-2.3.2-sources.jar">
+					<artifact name="jackson-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="233763" time="0" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\srcs\jackson-core-2.3.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.3.2/jackson-core-2.3.2-sources.jar"/>
 					</artifact>
-					<artifact name="jackson-core" type="jar" ext="jar" status="successful" details="" size="199553" time="1095" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\jars\jackson-core-2.3.2.jar">
+					<artifact name="jackson-core" type="jar" ext="jar" status="no" details="" size="199553" time="0" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\jars\jackson-core-2.3.2.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.3.2/jackson-core-2.3.2.jar"/>
 					</artifact>
-					<artifact name="jackson-core" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="823616" time="3565" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\docs\jackson-core-2.3.2-javadoc.jar">
+					<artifact name="jackson-core" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="823616" time="0" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\docs\jackson-core-2.3.2-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.3.2/jackson-core-2.3.2-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -878,13 +855,13 @@
 				<metadata-artifact status="no" details="" size="4851" time="0" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\ivy-2.3.2.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/com.fasterxml.jackson.core/jackson-annotations/2.3.2/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jackson-annotations" type="jar" ext="jar" status="successful" details="" size="36521" time="548" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\jars\jackson-annotations-2.3.2.jar">
+					<artifact name="jackson-annotations" type="jar" ext="jar" status="no" details="" size="36521" time="0" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\jars\jackson-annotations-2.3.2.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.3.2/jackson-annotations-2.3.2.jar"/>
 					</artifact>
-					<artifact name="jackson-annotations" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="255553" time="1195" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\docs\jackson-annotations-2.3.2-javadoc.jar">
+					<artifact name="jackson-annotations" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="255553" time="0" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\docs\jackson-annotations-2.3.2-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.3.2/jackson-annotations-2.3.2-javadoc.jar"/>
 					</artifact>
-					<artifact name="jackson-annotations" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="39607" time="655" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\srcs\jackson-annotations-2.3.2-sources.jar">
+					<artifact name="jackson-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="39607" time="0" location="C:\Users\Nomak\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\srcs\jackson-annotations-2.3.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.3.2/jackson-annotations-2.3.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -896,10 +873,10 @@
 				<metadata-artifact status="no" details="" size="6107" time="0" location="C:\Users\Nomak\.ivy2\cache\org.joda\joda-convert\ivy-1.6.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/org.joda/joda-convert/1.6/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="joda-convert" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="95975" time="734" location="C:\Users\Nomak\.ivy2\cache\org.joda\joda-convert\docs\joda-convert-1.6-javadoc.jar">
+					<artifact name="joda-convert" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="95975" time="0" location="C:\Users\Nomak\.ivy2\cache\org.joda\joda-convert\docs\joda-convert-1.6-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/joda/joda-convert/1.6/joda-convert-1.6-javadoc.jar"/>
 					</artifact>
-					<artifact name="joda-convert" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="36436" time="518" location="C:\Users\Nomak\.ivy2\cache\org.joda\joda-convert\srcs\joda-convert-1.6-sources.jar">
+					<artifact name="joda-convert" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="36436" time="0" location="C:\Users\Nomak\.ivy2\cache\org.joda\joda-convert\srcs\joda-convert-1.6-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/joda/joda-convert/1.6/joda-convert-1.6-sources.jar"/>
 					</artifact>
 					<artifact name="joda-convert" type="jar" ext="jar" status="no" details="" size="98818" time="0" location="C:\Users\Nomak\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar">
@@ -917,10 +894,10 @@
 					<artifact name="joda-time" type="jar" ext="jar" status="no" details="" size="581571" time="0" location="C:\Users\Nomak\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar">
 						<origin-location is-local="false" location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/joda-time/joda-time/2.3/jars/joda-time.jar"/>
 					</artifact>
-					<artifact name="joda-time" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="718287" time="1573" location="C:\Users\Nomak\.ivy2\cache\joda-time\joda-time\srcs\joda-time-2.3-sources.jar">
+					<artifact name="joda-time" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="718287" time="0" location="C:\Users\Nomak\.ivy2\cache\joda-time\joda-time\srcs\joda-time-2.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.3/joda-time-2.3-sources.jar"/>
 					</artifact>
-					<artifact name="joda-time" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1301413" time="3426" location="C:\Users\Nomak\.ivy2\cache\joda-time\joda-time\docs\joda-time-2.3-javadoc.jar">
+					<artifact name="joda-time" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1301413" time="0" location="C:\Users\Nomak\.ivy2\cache\joda-time\joda-time\docs\joda-time-2.3-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.3/joda-time-2.3-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -932,10 +909,10 @@
 				<metadata-artifact status="no" details="" size="2536" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\ivy-2.3.9.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/com.typesafe.play/play-datacommons_2.11/2.3.9/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="2.3.9" rev-constraint-default="2.3.9" rev-constraint-dynamic="2.3.9" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="play-datacommons_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1455" time="733" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\srcs\play-datacommons_2.11-2.3.9-sources.jar">
+					<artifact name="play-datacommons_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1455" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\srcs\play-datacommons_2.11-2.3.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-datacommons_2.11/2.3.9/play-datacommons_2.11-2.3.9-sources.jar"/>
 					</artifact>
-					<artifact name="play-datacommons_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="353349" time="1429" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\docs\play-datacommons_2.11-2.3.9-javadoc.jar">
+					<artifact name="play-datacommons_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="353349" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\docs\play-datacommons_2.11-2.3.9-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-datacommons_2.11/2.3.9/play-datacommons_2.11-2.3.9-javadoc.jar"/>
 					</artifact>
 					<artifact name="play-datacommons_2.11" type="jar" ext="jar" status="no" details="" size="5328" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.9.jar">
@@ -950,13 +927,13 @@
 				<metadata-artifact status="no" details="" size="2533" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-functional_2.11\ivy-2.3.9.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/com.typesafe.play/play-functional_2.11/2.3.9/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="2.3.9" rev-constraint-default="2.3.9" rev-constraint-dynamic="2.3.9" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="play-functional_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="527105" time="2666" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-functional_2.11\docs\play-functional_2.11-2.3.9-javadoc.jar">
+					<artifact name="play-functional_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="527105" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-functional_2.11\docs\play-functional_2.11-2.3.9-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-functional_2.11/2.3.9/play-functional_2.11-2.3.9-javadoc.jar"/>
 					</artifact>
 					<artifact name="play-functional_2.11" type="jar" ext="jar" status="no" details="" size="373182" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.9.jar">
 						<origin-location is-local="false" location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/com.typesafe.play/play-functional_2.11/2.3.9/jars/play-functional_2.11.jar"/>
 					</artifact>
-					<artifact name="play-functional_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="9504" time="691" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-functional_2.11\srcs\play-functional_2.11-2.3.9-sources.jar">
+					<artifact name="play-functional_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="9504" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-functional_2.11\srcs\play-functional_2.11-2.3.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-functional_2.11/2.3.9/play-functional_2.11-2.3.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -968,10 +945,10 @@
 				<metadata-artifact status="no" details="" size="3478" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\ivy-2.3.9.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/com.typesafe.play/play-iteratees_2.11/2.3.9/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="2.3.9" rev-constraint-default="2.3.9" rev-constraint-dynamic="2.3.9" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="play-iteratees_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="541839" time="3704" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\docs\play-iteratees_2.11-2.3.9-javadoc.jar">
+					<artifact name="play-iteratees_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="541839" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\docs\play-iteratees_2.11-2.3.9-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-iteratees_2.11/2.3.9/play-iteratees_2.11-2.3.9-javadoc.jar"/>
 					</artifact>
-					<artifact name="play-iteratees_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="32929" time="986" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\srcs\play-iteratees_2.11-2.3.9-sources.jar">
+					<artifact name="play-iteratees_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="32929" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\srcs\play-iteratees_2.11-2.3.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-iteratees_2.11/2.3.9/play-iteratees_2.11-2.3.9-sources.jar"/>
 					</artifact>
 					<artifact name="play-iteratees_2.11" type="jar" ext="jar" status="no" details="" size="731026" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.9.jar">
@@ -986,10 +963,10 @@
 				<metadata-artifact status="no" details="" size="2743" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe\config\ivy-1.2.1.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/com.typesafe/config/1.2.1/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="config" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="147508" time="1872" location="C:\Users\Nomak\.ivy2\cache\com.typesafe\config\docs\config-1.2.1-javadoc.jar">
+					<artifact name="config" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="147508" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe\config\docs\config-1.2.1-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1-javadoc.jar"/>
 					</artifact>
-					<artifact name="config" type="jar" ext="jar" status="successful" details="" size="219554" time="2070" location="C:\Users\Nomak\.ivy2\cache\com.typesafe\config\jars\config-1.2.1.jar">
+					<artifact name="config" type="jar" ext="jar" status="no" details="" size="219554" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe\config\jars\config-1.2.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1.jar"/>
 					</artifact>
 					<artifact name="config" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="132611" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe\config\srcs\config-1.2.1-sources.jar">
@@ -1007,10 +984,10 @@
 					<artifact name="scala-stm_2.11" type="jar" ext="jar" status="no" details="" size="630306" time="0" location="C:\Users\Nomak\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar">
 						<origin-location is-local="false" location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/org.scala-stm/scala-stm_2.11/0.7/jars/scala-stm_2.11.jar"/>
 					</artifact>
-					<artifact name="scala-stm_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="929219" time="7177" location="C:\Users\Nomak\.ivy2\cache\org.scala-stm\scala-stm_2.11\docs\scala-stm_2.11-0.7-javadoc.jar">
+					<artifact name="scala-stm_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="929219" time="0" location="C:\Users\Nomak\.ivy2\cache\org.scala-stm\scala-stm_2.11\docs\scala-stm_2.11-0.7-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-stm/scala-stm_2.11/0.7/scala-stm_2.11-0.7-javadoc.jar"/>
 					</artifact>
-					<artifact name="scala-stm_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="116149" time="1623" location="C:\Users\Nomak\.ivy2\cache\org.scala-stm\scala-stm_2.11\srcs\scala-stm_2.11-0.7-sources.jar">
+					<artifact name="scala-stm_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="116149" time="0" location="C:\Users\Nomak\.ivy2\cache\org.scala-stm\scala-stm_2.11\srcs\scala-stm_2.11-0.7-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-stm/scala-stm_2.11/0.7/scala-stm_2.11-0.7-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1028,7 +1005,7 @@
 					<artifact name="build-link" type="jar" ext="jar" status="no" details="" size="11471" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.9.jar">
 						<origin-location is-local="false" location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/com.typesafe.play/build-link/2.3.9/jars/build-link.jar"/>
 					</artifact>
-					<artifact name="build-link" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="64610" time="1010" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\build-link\docs\build-link-2.3.9-javadoc.jar">
+					<artifact name="build-link" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="64610" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\build-link\docs\build-link-2.3.9-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.3.9/build-link-2.3.9-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -1046,7 +1023,7 @@
 					<artifact name="play-exceptions" type="jar" ext="jar" status="no" details="" size="4598" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.9.jar">
 						<origin-location is-local="false" location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/com.typesafe.play/play-exceptions/2.3.9/jars/play-exceptions.jar"/>
 					</artifact>
-					<artifact name="play-exceptions" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="48046" time="969" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-exceptions\docs\play-exceptions-2.3.9-javadoc.jar">
+					<artifact name="play-exceptions" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="48046" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\play-exceptions\docs\play-exceptions-2.3.9-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.3.9/play-exceptions-2.3.9-javadoc.jar"/>
 					</artifact>
 				</artifacts>
@@ -1058,10 +1035,10 @@
 				<metadata-artifact status="no" details="" size="2918" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\twirl-api_2.11\ivy-1.0.2.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/com.typesafe.play/twirl-api_2.11/1.0.2/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="twirl-api_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="502839" time="2415" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\twirl-api_2.11\docs\twirl-api_2.11-1.0.2-javadoc.jar">
+					<artifact name="twirl-api_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="502839" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\twirl-api_2.11\docs\twirl-api_2.11-1.0.2-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.11/1.0.2/twirl-api_2.11-1.0.2-javadoc.jar"/>
 					</artifact>
-					<artifact name="twirl-api_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="6042" time="523" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\twirl-api_2.11\srcs\twirl-api_2.11-1.0.2-sources.jar">
+					<artifact name="twirl-api_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="6042" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\twirl-api_2.11\srcs\twirl-api_2.11-1.0.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.11/1.0.2/twirl-api_2.11-1.0.2-sources.jar"/>
 					</artifact>
 					<artifact name="twirl-api_2.11" type="jar" ext="jar" status="no" details="" size="60878" time="0" location="C:\Users\Nomak\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar">
@@ -1076,13 +1053,13 @@
 				<metadata-artifact status="no" details="" size="3002" time="0" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/org.scala-lang.modules/scala-xml_2.11/1.0.1/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="scala-xml_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1153655" time="7490" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\docs\scala-xml_2.11-1.0.1-javadoc.jar">
+					<artifact name="scala-xml_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1153655" time="0" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\docs\scala-xml_2.11-1.0.1-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.1/scala-xml_2.11-1.0.1-javadoc.jar"/>
 					</artifact>
-					<artifact name="scala-xml_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="109171" time="1461" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\srcs\scala-xml_2.11-1.0.1-sources.jar">
+					<artifact name="scala-xml_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="109171" time="0" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\srcs\scala-xml_2.11-1.0.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.1/scala-xml_2.11-1.0.1-sources.jar"/>
 					</artifact>
-					<artifact name="scala-xml_2.11" type="jar" ext="jar" status="successful" details="" size="655685" time="4589" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\jars\scala-xml_2.11-1.0.1.jar">
+					<artifact name="scala-xml_2.11" type="jar" ext="jar" status="no" details="" size="655685" time="0" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\jars\scala-xml_2.11-1.0.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.1/scala-xml_2.11-1.0.1.jar"/>
 					</artifact>
 				</artifacts>
@@ -1096,10 +1073,10 @@
 					<artifact name="commons-lang3" type="jar" ext="jar" status="no" details="" size="315805" time="0" location="C:\Users\Nomak\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar">
 						<origin-location is-local="false" location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/org.apache.commons/commons-lang3/3.1/jars/commons-lang3.jar"/>
 					</artifact>
-					<artifact name="commons-lang3" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1765707" time="10584" location="C:\Users\Nomak\.ivy2\cache\org.apache.commons\commons-lang3\docs\commons-lang3-3.1-javadoc.jar">
+					<artifact name="commons-lang3" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1765707" time="0" location="C:\Users\Nomak\.ivy2\cache\org.apache.commons\commons-lang3\docs\commons-lang3-3.1-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1-javadoc.jar"/>
 					</artifact>
-					<artifact name="commons-lang3" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="393048" time="2340" location="C:\Users\Nomak\.ivy2\cache\org.apache.commons\commons-lang3\srcs\commons-lang3-3.1-sources.jar">
+					<artifact name="commons-lang3" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="393048" time="0" location="C:\Users\Nomak\.ivy2\cache\org.apache.commons\commons-lang3\srcs\commons-lang3-3.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1111,13 +1088,13 @@
 				<metadata-artifact status="no" details="" size="2657" time="0" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang\scala-library\ivy-2.11.6.xml" searched="false" origin-is-local="false" origin-location="file:////D:/typesafe_activator/activator-dist-1.3.5/repository/org.scala-lang/scala-library/2.11.6/ivys/ivy.xml"/>
 				<caller organisation="bd2-romita" name="bd2-romita$sources_javadoc_2.11" conf="compile" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.0-SNAPSHOT" extra-info.apiURL="http://www.scala-lang.org/api/2.11.6/"/>
 				<artifacts>
-					<artifact name="scala-library" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="22813840" time="118713" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang\scala-library\docs\scala-library-2.11.6-javadoc.jar">
+					<artifact name="scala-library" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="22813840" time="0" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang\scala-library\docs\scala-library-2.11.6-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.6/scala-library-2.11.6-javadoc.jar"/>
 					</artifact>
 					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5564007" time="0" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar">
 						<origin-location is-local="false" location="UNKNOWN"/>
 					</artifact>
-					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="906435" time="3431" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang\scala-library\srcs\scala-library-2.11.6-sources.jar">
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="906435" time="0" location="C:\Users\Nomak\.ivy2\cache\org.scala-lang\scala-library\srcs\scala-library-2.11.6-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.6/scala-library-2.11.6-sources.jar"/>
 					</artifact>
 				</artifacts>

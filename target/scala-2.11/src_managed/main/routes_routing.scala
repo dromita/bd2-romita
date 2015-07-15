@@ -1,6 +1,6 @@
 // @SOURCE:D:/typesafe_activator/activator-dist-1.3.5/bd2-romita/conf/routes
-// @HASH:bd8b39863bd9576aee84a61499712007e526d459
-// @DATE:Wed Jul 15 19:14:02 CEST 2015
+// @HASH:2a770844e75caaec2e0ff477c1384fb495cf9645
+// @DATE:Wed Jul 15 19:36:58 CEST 2015
 
 
 import scala.language.reflectiveCalls
@@ -64,8 +64,8 @@ HandlerDef(this.getClass.getClassLoader, "", "controllers.ClientiController", "s
 // @LINE:10
 private[this] lazy val controllers_ClientiController_aggiungiServiziCliente4_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("add_servizi_cliente"))))
 private[this] lazy val controllers_ClientiController_aggiungiServiziCliente4_invoker = createInvoker(
-controllers.ClientiController.aggiungiServiziCliente(),
-HandlerDef(this.getClass.getClassLoader, "", "controllers.ClientiController", "aggiungiServiziCliente", Nil,"POST", """""", Routes.prefix + """add_servizi_cliente"""))
+controllers.ClientiController.aggiungiServiziCliente(fakeValue[Integer]),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.ClientiController", "aggiungiServiziCliente", Seq(classOf[Integer]),"POST", """""", Routes.prefix + """add_servizi_cliente"""))
         
 
 // @LINE:11
@@ -130,7 +130,7 @@ private[this] lazy val controllers_Assets_at13_invoker = createInvoker(
 controllers.Assets.at(fakeValue[String], fakeValue[String]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "at", Seq(classOf[String], classOf[String]),"GET", """ Map static resources from the /public folder to the /assets URL path""", Routes.prefix + """assets/$file<.+>"""))
         
-def documentation = List(("""GET""", prefix,"""controllers.Application.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_cliente""","""controllers.ClientiController.show()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_cliente""","""controllers.ClientiController.aggiungiCliente()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """show_clienti""","""controllers.ClientiController.show_all_clients()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_servizi_cliente""","""controllers.ClientiController.aggiungiServiziCliente()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """getNoleggi""","""controllers.ClientiController.getNumNoleggi()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_promo""","""controllers.PromozioniController.show()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_promo""","""controllers.PromozioniController.aggiungiPromozione()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """get_top_promo""","""controllers.PromozioniController.showTopPromo()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """get_all_promos""","""controllers.PromozioniController.showAllPromos()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """get_promo""","""controllers.PromozioniController.getPromo(idPromo:Integer)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_prenotazione""","""controllers.PrenotazioniController.show()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_prenotazione""","""controllers.PrenotazioniController.aggiungiPrenotazione()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+def documentation = List(("""GET""", prefix,"""controllers.Application.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_cliente""","""controllers.ClientiController.show()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_cliente""","""controllers.ClientiController.aggiungiCliente()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """show_clienti""","""controllers.ClientiController.show_all_clients()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_servizi_cliente""","""controllers.ClientiController.aggiungiServiziCliente(codiceCliente:Integer)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """getNoleggi""","""controllers.ClientiController.getNumNoleggi()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_promo""","""controllers.PromozioniController.show()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_promo""","""controllers.PromozioniController.aggiungiPromozione()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """get_top_promo""","""controllers.PromozioniController.showTopPromo()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """get_all_promos""","""controllers.PromozioniController.showAllPromos()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """get_promo""","""controllers.PromozioniController.getPromo(idPromo:Integer)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_prenotazione""","""controllers.PrenotazioniController.show()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_prenotazione""","""controllers.PrenotazioniController.aggiungiPrenotazione()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -172,8 +172,8 @@ case controllers_ClientiController_show_all_clients3_route(params) => {
 
 // @LINE:10
 case controllers_ClientiController_aggiungiServiziCliente4_route(params) => {
-   call { 
-        controllers_ClientiController_aggiungiServiziCliente4_invoker.call(controllers.ClientiController.aggiungiServiziCliente())
+   call(params.fromQuery[Integer]("codiceCliente", None)) { (codiceCliente) =>
+        controllers_ClientiController_aggiungiServiziCliente4_invoker.call(controllers.ClientiController.aggiungiServiziCliente(codiceCliente))
    }
 }
         

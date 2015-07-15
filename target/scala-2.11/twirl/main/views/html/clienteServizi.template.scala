@@ -37,7 +37,7 @@ Seq[Any](format.raw/*1.90*/("""
 
     """),format.raw/*11.5*/("""<div class="container">
 
-        """),_display_(/*13.10*/helper/*13.16*/.form(action = routes.ClientiController.aggiungiServiziCliente())/*13.81*/ {_display_(Seq[Any](format.raw/*13.83*/("""
+        """),_display_(/*13.10*/helper/*13.16*/.form(action = routes.ClientiController.aggiungiServiziCliente(cliente.getId()))/*13.96*/ {_display_(Seq[Any](format.raw/*13.98*/("""
             """),format.raw/*14.13*/("""<div id="signup" class="row">
 
                 """),_display_(/*16.18*/if(clienteServiziForm.hasErrors)/*16.50*/ {_display_(Seq[Any](format.raw/*16.52*/("""
@@ -45,34 +45,32 @@ Seq[Any](format.raw/*1.90*/("""
                     """),_display_(/*18.22*/notice("error")/*18.37*/ {color =>_display_(Seq[Any](format.raw/*18.47*/(""" """),format.raw/*18.48*/("""<span style="color:red"> """),_display_(/*18.74*/clienteServiziForm/*18.92*/.globalError.message),format.raw/*18.112*/(""" """),format.raw/*18.113*/("""</span>""")))}),format.raw/*18.121*/("""
                     """),format.raw/*19.21*/("""</p>
                 """)))}),format.raw/*20.18*/("""
-                """),_display_(/*21.18*/inputText(
-                    clienteServiziForm()
-                )),format.raw/*23.18*/("""
 
-                    """),format.raw/*25.21*/("""<!-- Checkboxes -->
-                """),_display_(/*26.18*/checkbox(
-                    clienteServiziForm("spa"),
+                    """),format.raw/*22.21*/("""<!-- Checkboxes -->
+
+                """),_display_(/*24.18*/checkbox(
+                    field = clienteServiziForm("spa"),
                     '_label -> "SPA"
-                )),format.raw/*29.18*/("""
+                )),format.raw/*27.18*/("""
 
-                """),_display_(/*31.18*/checkbox(
-                    clienteServiziForm("piscina"),
+                """),_display_(/*29.18*/checkbox(
+                    field = clienteServiziForm("piscina"),
                     '_label -> "Piscina"
-                )),format.raw/*34.18*/("""
+                )),format.raw/*32.18*/("""
 
-                """),_display_(/*36.18*/checkbox(
-                    clienteServiziForm("mass_relax"),
+                """),_display_(/*34.18*/checkbox(
+                    field = clienteServiziForm("mass_relax"),
                     '_label -> "Massaggio relax"
-                )),format.raw/*39.18*/("""
+                )),format.raw/*37.18*/("""
 
-                """),_display_(/*41.18*/checkbox(
-                    clienteServiziForm("mass_shiatsu"),
+                """),_display_(/*39.18*/checkbox(
+                    field = clienteServiziForm("mass_shiatsu"),
                     '_label -> "Massaggio shiatsu"
-                )),format.raw/*44.18*/("""
+                )),format.raw/*42.18*/("""
 
 
 
-                    """),format.raw/*48.21*/("""<!-- Button -->
+                    """),format.raw/*46.21*/("""<!-- Button -->
                 <div class="control-group">
                     <label class="control-label" for="submit"></label>
 
@@ -81,8 +79,8 @@ Seq[Any](format.raw/*1.90*/("""
                     </div>
                 </div>
 
-            """)))}),format.raw/*57.14*/("""
-    """),format.raw/*58.5*/("""</div>
+            """)))}),format.raw/*55.14*/("""
+    """),format.raw/*56.5*/("""</div>
 
     </div>
     <br><br>
@@ -99,11 +97,11 @@ Seq[Any](format.raw/*1.90*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Wed Jul 15 19:27:30 CEST 2015
+                  DATE: Wed Jul 15 19:40:33 CEST 2015
                   SOURCE: D:/typesafe_activator/activator-dist-1.3.5/bd2-romita/app/views/clienteServizi.scala.html
-                  HASH: e2603ceb78b5caee0945476289e45fefcf5629b8
-                  MATRIX: 782->1|1014->89|1042->151|1070->154|1102->178|1141->180|1175->187|1236->221|1251->227|1325->292|1365->294|1406->307|1481->355|1522->387|1562->389|1611->410|1677->449|1701->464|1749->474|1778->475|1831->501|1858->519|1900->539|1930->540|1970->548|2019->569|2072->591|2117->609|2207->678|2257->700|2321->737|2453->848|2499->867|2639->986|2685->1005|2836->1135|2882->1154|3037->1288|3089->1312|3456->1648|3488->1653
-                  LINES: 26->1|31->1|33->6|35->8|35->8|35->8|38->11|40->13|40->13|40->13|40->13|41->14|43->16|43->16|43->16|44->17|45->18|45->18|45->18|45->18|45->18|45->18|45->18|45->18|45->18|46->19|47->20|48->21|50->23|52->25|53->26|56->29|58->31|61->34|63->36|66->39|68->41|71->44|75->48|84->57|85->58
+                  HASH: 157e089ffb72b3740c669ce58e3f1d27abb12d43
+                  MATRIX: 782->1|1014->89|1042->151|1070->154|1102->178|1141->180|1175->187|1236->221|1251->227|1340->307|1380->309|1421->322|1496->370|1537->402|1577->404|1626->425|1692->464|1716->479|1764->489|1793->490|1846->516|1873->534|1915->554|1945->555|1985->563|2034->584|2087->606|2137->628|2202->666|2342->785|2388->804|2536->931|2582->950|2741->1088|2787->1107|2950->1249|3002->1273|3369->1609|3401->1614
+                  LINES: 26->1|31->1|33->6|35->8|35->8|35->8|38->11|40->13|40->13|40->13|40->13|41->14|43->16|43->16|43->16|44->17|45->18|45->18|45->18|45->18|45->18|45->18|45->18|45->18|45->18|46->19|47->20|49->22|51->24|54->27|56->29|59->32|61->34|64->37|66->39|69->42|73->46|82->55|83->56
                   -- GENERATED --
               */
           
