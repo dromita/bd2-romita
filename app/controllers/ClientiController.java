@@ -1,5 +1,6 @@
 package controllers;
 
+import dao.ClientiDao;
 import model.ClientiEntity;
 import play.data.Form;
 import play.db.jpa.Transactional;
@@ -18,6 +19,9 @@ public class ClientiController extends Controller {
         ClientiEntity cliente = form.get();
 
         // if (cliente.isNull()) return badRequest(views.html.cliente.render(form));
+
+        ClientiDao clienteDao = new ClientiDao();
+        clienteDao.persist(cliente);
 
         return ok("Cliente inserito");
     }

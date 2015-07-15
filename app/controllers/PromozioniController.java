@@ -1,5 +1,6 @@
 package controllers;
 
+import dao.PromozioniDao;
 import model.PromozioniEntity;
 import play.data.Form;
 import play.db.jpa.Transactional;
@@ -18,6 +19,13 @@ public class PromozioniController extends Controller {
         PromozioniEntity promozione = form.get();
 
         // if (promozione.isNull()) return badRequest(views.html.promozione.render(form));
+
+        PromozioniDao promoDao = new PromozioniDao();
+        promoDao.persist(promozione);
+
+        // FAI COMPARIRE ELENCO di TUTTI i servizi
+        // oppure permetti di inserire i nomi dei servizi testualmente
+        // AGGIUNGI le n tuple PromoServizi
 
         return ok("promozione inserito");
     }
