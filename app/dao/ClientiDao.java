@@ -31,7 +31,7 @@ public class ClientiDao extends DaoService<ClientiEntity, Integer> {
     }
 
     public ClientiEntity getCliente(int idCliente){
-        return (ClientiEntity) em.createQuery("SELECT * FROM clienti WHERE id = :idCliente").setParameter("idCliente", idCliente).getSingleResult();
+        return (ClientiEntity) em.createQuery("FROM clienti WHERE id = :idCliente").setParameter("idCliente", idCliente).getSingleResult();
     }
 
     public ClienteElencoServizi getDetailedCliente(int idCliente){
@@ -39,7 +39,7 @@ public class ClientiDao extends DaoService<ClientiEntity, Integer> {
 //
 //        String sDetailPromo = "SELECT promo_servizi FROM promo_servizi WHERE id = :promoId";
 //        //List<PromoServiziEntity> listPromoServizi = em.createNativeQuery(sDetailPromo).getResultList();
-//        // uso direttamente il vettore di oggetti perchè immagino che non sappia fare il mapping diretto, essendo il controller di un'altra classe
+//        // uso direttamente il vettore di oggetti perch immagino che non sappia fare il mapping diretto, essendo il controller di un'altra classe
 //        List<Object[]> listPromoServizi = em.createNativeQuery(sDetailPromo).setParameter("promoId", promo.getId()).getResultList();
 
         String elencoServizi = "Servizi: " + getElencoServizi(cliente.getId());

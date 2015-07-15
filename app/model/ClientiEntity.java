@@ -21,6 +21,7 @@ public class ClientiEntity {
     private Boolean noloAccessori;
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false, insertable = true, updatable = true)
     public Integer getId() {
         return id;

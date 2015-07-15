@@ -76,7 +76,7 @@ public class PromozioniDao extends DaoService<PromozioniEntity, Integer> {
 //
 //        String sDetailPromo = "SELECT promo_servizi FROM promo_servizi WHERE id = :promoId";
 //        //List<PromoServiziEntity> listPromoServizi = em.createNativeQuery(sDetailPromo).getResultList();
-//        // uso direttamente il vettore di oggetti perchè immagino che non sappia fare il mapping diretto, essendo il controller di un'altra classe
+//        // uso direttamente il vettore di oggetti perch immagino che non sappia fare il mapping diretto, essendo il controller di un'altra classe
 //        List<Object[]> listPromoServizi = em.createNativeQuery(sDetailPromo).setParameter("promoId", promo.getId()).getResultList();
 
         String elencoServizi = "Servizi: " + getElencoServizi(promo.getId());

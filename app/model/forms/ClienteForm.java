@@ -1,14 +1,15 @@
 package model.forms;
 
+import model.ClientiEntity;
 import play.data.validation.Constraints;
+
+import java.sql.Date;
 
 /**
  * Created by Nomak on 15/07/2015.
  */
 public class ClienteForm {
 
-    @Constraints.Required
-    public String id;
     @Constraints.Required
     public String nome;
     @Constraints.Required
@@ -24,11 +25,27 @@ public class ClienteForm {
 
     @Override
     public String toString() {
-        return String.format("ID: %s, Nome: %s, Cognome: %s,\n" +
+        return String.format("Nome: %s, Cognome: %s,\n" +
                 "CF: %s, Data di nascita: %s,\n" +
                 "Indirizzo: %s, %s %s (%s)",
-                id, nome, cognome,
+                nome, cognome,
                 cf, dataNascita,
                 indirizzo, cap, citta, provincia);
+    }
+
+    public ClientiEntity toEntity() {
+
+        ClientiEntity entity = new ClientiEntity();
+        entity.setNome(this.nome);
+        entity.setCognome(this.cognome);
+        entity.setCf(this.cf);
+        entity.setIndirizzo(this.indirizzo);
+        entity.setCitta(this.citta);
+        entity.setProvincia(this.provincia);
+        entity.setCap(this.cap);
+        entity.setDataNascita(Date.valueOf(this.dataNascita));
+
+
+        return entity;
     }
 }

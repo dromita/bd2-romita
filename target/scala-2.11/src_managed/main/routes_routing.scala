@@ -1,6 +1,6 @@
 // @SOURCE:D:/typesafe_activator/activator-dist-1.3.5/bd2-romita/conf/routes
-// @HASH:b95a41d3c8413b643ac5a9e5b1bc50ccaa889b9e
-// @DATE:Wed Jul 15 15:29:13 CEST 2015
+// @HASH:4e9b06368fd4f731813d0865ea71c9fc40fc5d72
+// @DATE:Wed Jul 15 17:58:28 CEST 2015
 
 
 import scala.language.reflectiveCalls
@@ -55,68 +55,75 @@ HandlerDef(this.getClass.getClassLoader, "", "controllers.ClientiController", "a
         
 
 // @LINE:9
-private[this] lazy val controllers_ClientiController_getNumNoleggi3_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("getNoleggi"))))
-private[this] lazy val controllers_ClientiController_getNumNoleggi3_invoker = createInvoker(
+private[this] lazy val controllers_ClientiController_show_all_clients3_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("show_clients"))))
+private[this] lazy val controllers_ClientiController_show_all_clients3_invoker = createInvoker(
+controllers.ClientiController.show_all_clients(),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.ClientiController", "show_all_clients", Nil,"GET", """""", Routes.prefix + """show_clients"""))
+        
+
+// @LINE:10
+private[this] lazy val controllers_ClientiController_getNumNoleggi4_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("getNoleggi"))))
+private[this] lazy val controllers_ClientiController_getNumNoleggi4_invoker = createInvoker(
 controllers.ClientiController.getNumNoleggi(),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.ClientiController", "getNumNoleggi", Nil,"GET", """""", Routes.prefix + """getNoleggi"""))
         
 
-// @LINE:10
-private[this] lazy val controllers_PromozioniController_show4_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("add_promo"))))
-private[this] lazy val controllers_PromozioniController_show4_invoker = createInvoker(
+// @LINE:12
+private[this] lazy val controllers_PromozioniController_show5_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("add_promo"))))
+private[this] lazy val controllers_PromozioniController_show5_invoker = createInvoker(
 controllers.PromozioniController.show(),
-HandlerDef(this.getClass.getClassLoader, "", "controllers.PromozioniController", "show", Nil,"GET", """""", Routes.prefix + """add_promo"""))
+HandlerDef(this.getClass.getClassLoader, "", "controllers.PromozioniController", "show", Nil,"GET", """GET         /get_dettagli_cliente    controllers.ClientiController.""", Routes.prefix + """add_promo"""))
         
 
-// @LINE:11
-private[this] lazy val controllers_PromozioniController_aggiungiPromozione5_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("add_promo"))))
-private[this] lazy val controllers_PromozioniController_aggiungiPromozione5_invoker = createInvoker(
+// @LINE:13
+private[this] lazy val controllers_PromozioniController_aggiungiPromozione6_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("add_promo"))))
+private[this] lazy val controllers_PromozioniController_aggiungiPromozione6_invoker = createInvoker(
 controllers.PromozioniController.aggiungiPromozione(),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.PromozioniController", "aggiungiPromozione", Nil,"POST", """""", Routes.prefix + """add_promo"""))
         
 
-// @LINE:12
-private[this] lazy val controllers_PromozioniController_showTopPromo6_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("get_top_promo"))))
-private[this] lazy val controllers_PromozioniController_showTopPromo6_invoker = createInvoker(
+// @LINE:14
+private[this] lazy val controllers_PromozioniController_showTopPromo7_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("get_top_promo"))))
+private[this] lazy val controllers_PromozioniController_showTopPromo7_invoker = createInvoker(
 controllers.PromozioniController.showTopPromo(),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.PromozioniController", "showTopPromo", Nil,"GET", """""", Routes.prefix + """get_top_promo"""))
         
 
-// @LINE:13
-private[this] lazy val controllers_PromozioniController_showAllPromos7_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("get_all_promos"))))
-private[this] lazy val controllers_PromozioniController_showAllPromos7_invoker = createInvoker(
+// @LINE:15
+private[this] lazy val controllers_PromozioniController_showAllPromos8_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("get_all_promos"))))
+private[this] lazy val controllers_PromozioniController_showAllPromos8_invoker = createInvoker(
 controllers.PromozioniController.showAllPromos(),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.PromozioniController", "showAllPromos", Nil,"GET", """""", Routes.prefix + """get_all_promos"""))
         
 
-// @LINE:14
-private[this] lazy val controllers_PromozioniController_getPromo8_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("get_promo"))))
-private[this] lazy val controllers_PromozioniController_getPromo8_invoker = createInvoker(
+// @LINE:16
+private[this] lazy val controllers_PromozioniController_getPromo9_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("get_promo"))))
+private[this] lazy val controllers_PromozioniController_getPromo9_invoker = createInvoker(
 controllers.PromozioniController.getPromo(fakeValue[Integer]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.PromozioniController", "getPromo", Seq(classOf[Integer]),"GET", """""", Routes.prefix + """get_promo"""))
         
 
-// @LINE:15
-private[this] lazy val controllers_PrenotazioniController_show9_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("add_prenotazione"))))
-private[this] lazy val controllers_PrenotazioniController_show9_invoker = createInvoker(
+// @LINE:17
+private[this] lazy val controllers_PrenotazioniController_show10_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("add_prenotazione"))))
+private[this] lazy val controllers_PrenotazioniController_show10_invoker = createInvoker(
 controllers.PrenotazioniController.show(),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.PrenotazioniController", "show", Nil,"GET", """""", Routes.prefix + """add_prenotazione"""))
         
 
-// @LINE:16
-private[this] lazy val controllers_PrenotazioniController_aggiungiPrenotazione10_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("add_prenotazione"))))
-private[this] lazy val controllers_PrenotazioniController_aggiungiPrenotazione10_invoker = createInvoker(
+// @LINE:18
+private[this] lazy val controllers_PrenotazioniController_aggiungiPrenotazione11_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("add_prenotazione"))))
+private[this] lazy val controllers_PrenotazioniController_aggiungiPrenotazione11_invoker = createInvoker(
 controllers.PrenotazioniController.aggiungiPrenotazione(),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.PrenotazioniController", "aggiungiPrenotazione", Nil,"POST", """""", Routes.prefix + """add_prenotazione"""))
         
 
-// @LINE:29
-private[this] lazy val controllers_Assets_at11_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
-private[this] lazy val controllers_Assets_at11_invoker = createInvoker(
+// @LINE:31
+private[this] lazy val controllers_Assets_at12_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
+private[this] lazy val controllers_Assets_at12_invoker = createInvoker(
 controllers.Assets.at(fakeValue[String], fakeValue[String]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "at", Seq(classOf[String], classOf[String]),"GET", """ Map static resources from the /public folder to the /assets URL path""", Routes.prefix + """assets/$file<.+>"""))
         
-def documentation = List(("""GET""", prefix,"""controllers.Application.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_cliente""","""controllers.ClientiController.show()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_cliente""","""controllers.ClientiController.aggiungiCliente()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """getNoleggi""","""controllers.ClientiController.getNumNoleggi()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_promo""","""controllers.PromozioniController.show()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_promo""","""controllers.PromozioniController.aggiungiPromozione()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """get_top_promo""","""controllers.PromozioniController.showTopPromo()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """get_all_promos""","""controllers.PromozioniController.showAllPromos()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """get_promo""","""controllers.PromozioniController.getPromo(idPromo:Integer)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_prenotazione""","""controllers.PrenotazioniController.show()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_prenotazione""","""controllers.PrenotazioniController.aggiungiPrenotazione()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+def documentation = List(("""GET""", prefix,"""controllers.Application.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_cliente""","""controllers.ClientiController.show()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_cliente""","""controllers.ClientiController.aggiungiCliente()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """show_clients""","""controllers.ClientiController.show_all_clients()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """getNoleggi""","""controllers.ClientiController.getNumNoleggi()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_promo""","""controllers.PromozioniController.show()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_promo""","""controllers.PromozioniController.aggiungiPromozione()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """get_top_promo""","""controllers.PromozioniController.showTopPromo()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """get_all_promos""","""controllers.PromozioniController.showAllPromos()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """get_promo""","""controllers.PromozioniController.getPromo(idPromo:Integer)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_prenotazione""","""controllers.PrenotazioniController.show()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_prenotazione""","""controllers.PrenotazioniController.aggiungiPrenotazione()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -149,73 +156,81 @@ case controllers_ClientiController_aggiungiCliente2_route(params) => {
         
 
 // @LINE:9
-case controllers_ClientiController_getNumNoleggi3_route(params) => {
+case controllers_ClientiController_show_all_clients3_route(params) => {
    call { 
-        controllers_ClientiController_getNumNoleggi3_invoker.call(controllers.ClientiController.getNumNoleggi())
+        controllers_ClientiController_show_all_clients3_invoker.call(controllers.ClientiController.show_all_clients())
    }
 }
         
 
 // @LINE:10
-case controllers_PromozioniController_show4_route(params) => {
+case controllers_ClientiController_getNumNoleggi4_route(params) => {
    call { 
-        controllers_PromozioniController_show4_invoker.call(controllers.PromozioniController.show())
-   }
-}
-        
-
-// @LINE:11
-case controllers_PromozioniController_aggiungiPromozione5_route(params) => {
-   call { 
-        controllers_PromozioniController_aggiungiPromozione5_invoker.call(controllers.PromozioniController.aggiungiPromozione())
+        controllers_ClientiController_getNumNoleggi4_invoker.call(controllers.ClientiController.getNumNoleggi())
    }
 }
         
 
 // @LINE:12
-case controllers_PromozioniController_showTopPromo6_route(params) => {
+case controllers_PromozioniController_show5_route(params) => {
    call { 
-        controllers_PromozioniController_showTopPromo6_invoker.call(controllers.PromozioniController.showTopPromo())
+        controllers_PromozioniController_show5_invoker.call(controllers.PromozioniController.show())
    }
 }
         
 
 // @LINE:13
-case controllers_PromozioniController_showAllPromos7_route(params) => {
+case controllers_PromozioniController_aggiungiPromozione6_route(params) => {
    call { 
-        controllers_PromozioniController_showAllPromos7_invoker.call(controllers.PromozioniController.showAllPromos())
+        controllers_PromozioniController_aggiungiPromozione6_invoker.call(controllers.PromozioniController.aggiungiPromozione())
    }
 }
         
 
 // @LINE:14
-case controllers_PromozioniController_getPromo8_route(params) => {
-   call(params.fromQuery[Integer]("idPromo", None)) { (idPromo) =>
-        controllers_PromozioniController_getPromo8_invoker.call(controllers.PromozioniController.getPromo(idPromo))
+case controllers_PromozioniController_showTopPromo7_route(params) => {
+   call { 
+        controllers_PromozioniController_showTopPromo7_invoker.call(controllers.PromozioniController.showTopPromo())
    }
 }
         
 
 // @LINE:15
-case controllers_PrenotazioniController_show9_route(params) => {
+case controllers_PromozioniController_showAllPromos8_route(params) => {
    call { 
-        controllers_PrenotazioniController_show9_invoker.call(controllers.PrenotazioniController.show())
+        controllers_PromozioniController_showAllPromos8_invoker.call(controllers.PromozioniController.showAllPromos())
    }
 }
         
 
 // @LINE:16
-case controllers_PrenotazioniController_aggiungiPrenotazione10_route(params) => {
-   call { 
-        controllers_PrenotazioniController_aggiungiPrenotazione10_invoker.call(controllers.PrenotazioniController.aggiungiPrenotazione())
+case controllers_PromozioniController_getPromo9_route(params) => {
+   call(params.fromQuery[Integer]("idPromo", None)) { (idPromo) =>
+        controllers_PromozioniController_getPromo9_invoker.call(controllers.PromozioniController.getPromo(idPromo))
    }
 }
         
 
-// @LINE:29
-case controllers_Assets_at11_route(params) => {
+// @LINE:17
+case controllers_PrenotazioniController_show10_route(params) => {
+   call { 
+        controllers_PrenotazioniController_show10_invoker.call(controllers.PrenotazioniController.show())
+   }
+}
+        
+
+// @LINE:18
+case controllers_PrenotazioniController_aggiungiPrenotazione11_route(params) => {
+   call { 
+        controllers_PrenotazioniController_aggiungiPrenotazione11_invoker.call(controllers.PrenotazioniController.aggiungiPrenotazione())
+   }
+}
+        
+
+// @LINE:31
+case controllers_Assets_at12_route(params) => {
    call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_at11_invoker.call(controllers.Assets.at(path, file))
+        controllers_Assets_at12_invoker.call(controllers.Assets.at(path, file))
    }
 }
         
