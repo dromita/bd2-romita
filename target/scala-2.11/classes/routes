@@ -6,7 +6,8 @@
 GET         /                        controllers.Application.index()
 GET         /add_cliente             controllers.ClientiController.show()
 POST        /add_cliente             controllers.ClientiController.aggiungiCliente()
-GET         /show_clients            controllers.ClientiController.show_all_clients()
+GET         /show_clienti            controllers.ClientiController.show_all_clients()
+POST        /add_servizi_cliente      controllers.ClientiController.aggiungiServiziCliente()
 GET         /getNoleggi              controllers.ClientiController.getNumNoleggi()
 #GET         /get_dettagli_cliente    controllers.ClientiController.
 GET         /add_promo               controllers.PromozioniController.show()

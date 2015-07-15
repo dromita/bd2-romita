@@ -11,7 +11,8 @@ import java.sql.Date;
 public class FruizioneServiziClientiEntity {
     private Integer id;
     private Date dataFruizione;
-    private CamereEntity camereByCliente;
+    private ClientiEntity clienteByCliente;
+    private ServiziEntity servizioByServizio;
 
     @Id
     @Column(name = "id", nullable = false, insertable = true, updatable = true)
@@ -55,12 +56,22 @@ public class FruizioneServiziClientiEntity {
     }
 
     @ManyToOne
-    @JoinColumn(name = "cliente", referencedColumnName = "num_camera", nullable = false)
-    public CamereEntity getCamereByCliente() {
-        return camereByCliente;
+    @JoinColumn(name = "cliente", referencedColumnName = "id", nullable = false)
+    public ClientiEntity getClienteByCliente() {
+        return clienteByCliente;
     }
 
-    public void setCamereByCliente(CamereEntity camereByCliente) {
-        this.camereByCliente = camereByCliente;
+    public void setClienteByCliente(ClientiEntity clienteByCliente) {
+        this.clienteByCliente = clienteByCliente;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "servizio", referencedColumnName = "nome", nullable = false)
+    public ServiziEntity getServizioByServizio() {
+        return servizioByServizio;
+    }
+
+    public void setServizioByServizio(ServiziEntity servizioByServizio) {
+        this.servizioByServizio = servizioByServizio;
     }
 }

@@ -1,6 +1,6 @@
 // @SOURCE:D:/typesafe_activator/activator-dist-1.3.5/bd2-romita/conf/routes
-// @HASH:4e9b06368fd4f731813d0865ea71c9fc40fc5d72
-// @DATE:Wed Jul 15 17:58:28 CEST 2015
+// @HASH:bd8b39863bd9576aee84a61499712007e526d459
+// @DATE:Wed Jul 15 19:14:02 CEST 2015
 
 package controllers;
 

@@ -1,8 +1,11 @@
 package controllers;
 
 import dao.ClientiDao;
+import dao.FruizioneServiziClientiDao;
 import model.ClientiEntity;
+import model.FruizioneServiziClientiEntity;
 import model.forms.ClienteForm;
+import model.forms.ServiziClientiForm;
 import model.service.ClienteElencoServizi;
 import play.data.Form;
 import play.db.jpa.Transactional;
@@ -28,7 +31,24 @@ public class ClientiController extends Controller {
         ClientiDao clienteDao = new ClientiDao();
         clienteDao.persist(cliente);
 
-        return ok("Cliente inserito");
+        Form<ServiziClientiForm> servizi_form = Form.form(model.forms.ServiziClientiForm.class);
+        return ok(views.html.clienteServizi.render(cliente, servizi_form));
+    }
+
+
+    @Transactional
+    public static Result aggiungiServiziCliente(){
+        Form<ServiziClientiForm> form = Form.form(ServiziClientiForm.class).bindFromRequest();
+
+        ServiziClientiForm serviziClienti = form.get();
+
+        List<FruizioneServiziClientiEntity> fsc = serviziClienti.toEntity();
+
+        for (FruizioneServiziClientiEntity entita : fsc){
+            new FruizioneServiziClientiDao().persist(entita);
+        }
+
+        return ok("vaffammokc");
     }
 
     @Transactional
