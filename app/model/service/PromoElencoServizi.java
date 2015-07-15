@@ -5,18 +5,18 @@ import java.math.BigDecimal;
 /**
  * Created by Nomak on 15/07/2015.
  */
-public class PromoListaServizi {
+public class PromoElencoServizi {
 
     String nomePromo;
     BigDecimal costo;
     String serviziOfferti;
 
-    public PromoListaServizi(){ };
+    public PromoElencoServizi(){ };
 
-    public PromoListaServizi(String nome, BigDecimal prezzo, String listaServizi){
+    public PromoElencoServizi(String nome, BigDecimal prezzo, String elencoServizi){
         this.nomePromo = nome;
         this.costo = prezzo;
-        this.serviziOfferti = listaServizi;
+        this.serviziOfferti = elencoServizi;
     }
 
     @Override

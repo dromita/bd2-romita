@@ -159,6 +159,7 @@ public class ClientiEntity {
 
     @Override
     public String toString(){
-        return String.format("ID: %s, Nome: %s, cognome: %s,\nindirizzo: %s, %s, %s(%s),\nCodice fiscale: %s,\nData di nascita: %s", id, nome, cognome, indirizzo, cap, citta, provincia, cf, dataNascita);
+        return String.format("ID: %s, Nome: %s, cognome: %s,\nindirizzo: %s, %s, %s(%s),\nCodice fiscale: %s,\nData di nascita: %s",
+                id, nome, cognome, indirizzo, cap, citta, provincia, cf, dataNascita);
     }
 }

@@ -18,4 +18,8 @@ public class CamereDao extends DaoService<CamereEntity, Short> {
 
         return q.getResultList();
     }
+
+    public CamereEntity getCamera(int numCamera){
+        return (CamereEntity) em.createQuery("select * from camere where num_camera = :numCamera").setParameter("numCamera", numCamera).getSingleResult();
+    }
 }

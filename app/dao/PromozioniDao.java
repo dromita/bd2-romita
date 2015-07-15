@@ -1,14 +1,11 @@
 package dao;
 
-import model.PromoServiziEntity;
 import model.PromozioniEntity;
 import model.ServiziEntity;
-import model.service.PromoListaServizi;
-import play.mvc.Result;
+import model.service.PromoElencoServizi;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -23,13 +20,13 @@ public class PromozioniDao extends DaoService<PromozioniEntity, Integer> {
 
         Integer idPromo = (Integer)q.getSingleResult();
 
-        q = em.createQuery("FROM promozioni WHERE id = :idPromo").setParameter("idPromo", idPromo);
+        q = em.createQuery("SELECT * FROM promozioni WHERE id = :idPromo").setParameter("idPromo", idPromo);
 
         return (PromozioniEntity)q.getSingleResult();
     }
 
     public PromozioniEntity getPromo(int promoId){
-        return (PromozioniEntity) em.createQuery("FROM promozioni WHERE id = :idPromo").setParameter("idPromo", promoId).getSingleResult();
+        return (PromozioniEntity) em.createQuery("SELECT * FROM promozioni WHERE id = :idPromo").setParameter("idPromo", promoId).getSingleResult();
     }
 
     public List<PromozioniEntity> getAllPromos(){
@@ -48,7 +45,7 @@ public class PromozioniDao extends DaoService<PromozioniEntity, Integer> {
     }
 
     public List<ServiziEntity> getServizi(int idPromo){
-        List<Object[]> listaRifServizi = em.createQuery("SELECT * FROM promo_servizi WHERE promo = :idPromo").setParameter("idPromo", idPromo).getResultList();
+        List<Object[]> listaRifServizi = em.createNativeQuery("SELECT * FROM promo_servizi WHERE promo = :idPromo").setParameter("idPromo", idPromo).getResultList();
         List<ServiziEntity> listaServizi = new LinkedList<>();
 
         for (Object[] o : listaRifServizi){
@@ -63,9 +60,9 @@ public class PromozioniDao extends DaoService<PromozioniEntity, Integer> {
         return listaServizi;
     }
 
-    public List<PromoListaServizi> getDetailedPromosAll(){
+    public List<PromoElencoServizi> getDetailedPromosAll(){
         List<PromozioniEntity> listPromo = getAllPromos();
-        List<PromoListaServizi> result = new LinkedList<>();
+        List<PromoElencoServizi> result = new LinkedList<>();
 
         for (PromozioniEntity promo : listPromo) {
             result.add(getDetailedPromo(promo.getId()));
@@ -74,8 +71,8 @@ public class PromozioniDao extends DaoService<PromozioniEntity, Integer> {
         return result;
     }
 
-    public PromoListaServizi getDetailedPromo(int promoId){
-//        PromozioniEntity promo = getPromo(promoId);
+    public PromoElencoServizi getDetailedPromo(int promoId){
+        PromozioniEntity promo = getPromo(promoId);
 //
 //        String sDetailPromo = "SELECT promo_servizi FROM promo_servizi WHERE id = :promoId";
 //        //List<PromoServiziEntity> listPromoServizi = em.createNativeQuery(sDetailPromo).getResultList();
@@ -83,7 +80,7 @@ public class PromozioniDao extends DaoService<PromozioniEntity, Integer> {
 //        List<Object[]> listPromoServizi = em.createNativeQuery(sDetailPromo).setParameter("promoId", promo.getId()).getResultList();
 
         String elencoServizi = "Servizi: " + getElencoServizi(promo.getId());
-        PromoListaServizi promoServ = new PromoListaServizi(promo.getNome(), promo.getCosto(), elencoServizi);
+        PromoElencoServizi promoServ = new PromoElencoServizi(promo.getNome(), promo.getCosto(), elencoServizi);
 
         return promoServ;
     }
