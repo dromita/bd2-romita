@@ -1,6 +1,6 @@
 // @SOURCE:D:/typesafe_activator/activator-dist-1.3.5/bd2-romita/conf/routes
-// @HASH:1b542c4ac275eac2d3caa23e1ce648f500a170cd
-// @DATE:Wed Jul 15 02:42:52 CEST 2015
+// @HASH:356357cd2a628fb4b18f38adb044cc508b08795b
+// @DATE:Wed Jul 15 11:39:30 CEST 2015
 
 
 import scala.language.reflectiveCalls
@@ -47,13 +47,20 @@ controllers.ClientiController.aggiungiCliente(),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.ClientiController", "aggiungiCliente", Nil,"POST", """#GET     /add_cliente                controllers.ClientiController.show()""", Routes.prefix + """add_cliente"""))
         
 
-// @LINE:21
-private[this] lazy val controllers_Assets_at2_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
-private[this] lazy val controllers_Assets_at2_invoker = createInvoker(
+// @LINE:9
+private[this] lazy val controllers_ClientiController_getNumNoleggi2_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("getNoleggi"))))
+private[this] lazy val controllers_ClientiController_getNumNoleggi2_invoker = createInvoker(
+controllers.ClientiController.getNumNoleggi(),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.ClientiController", "getNumNoleggi", Nil,"GET", """""", Routes.prefix + """getNoleggi"""))
+        
+
+// @LINE:23
+private[this] lazy val controllers_Assets_at3_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
+private[this] lazy val controllers_Assets_at3_invoker = createInvoker(
 controllers.Assets.at(fakeValue[String], fakeValue[String]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "at", Seq(classOf[String], classOf[String]),"GET", """ Map static resources from the /public folder to the /assets URL path""", Routes.prefix + """assets/$file<.+>"""))
         
-def documentation = List(("""GET""", prefix,"""controllers.Application.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_cliente""","""controllers.ClientiController.aggiungiCliente()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+def documentation = List(("""GET""", prefix,"""controllers.Application.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_cliente""","""controllers.ClientiController.aggiungiCliente()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """getNoleggi""","""controllers.ClientiController.getNumNoleggi()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -77,10 +84,18 @@ case controllers_ClientiController_aggiungiCliente1_route(params) => {
 }
         
 
-// @LINE:21
-case controllers_Assets_at2_route(params) => {
+// @LINE:9
+case controllers_ClientiController_getNumNoleggi2_route(params) => {
+   call { 
+        controllers_ClientiController_getNumNoleggi2_invoker.call(controllers.ClientiController.getNumNoleggi())
+   }
+}
+        
+
+// @LINE:23
+case controllers_Assets_at3_route(params) => {
    call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_at2_invoker.call(controllers.Assets.at(path, file))
+        controllers_Assets_at3_invoker.call(controllers.Assets.at(path, file))
    }
 }
         

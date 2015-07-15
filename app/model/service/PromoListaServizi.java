@@ -1,17 +1,19 @@
 package model.service;
 
+import java.math.BigDecimal;
+
 /**
  * Created by Nomak on 15/07/2015.
  */
 public class PromoListaServizi {
 
     String nomePromo;
-    Float costo;
+    BigDecimal costo;
     String serviziOfferti;
 
     public PromoListaServizi(){ };
 
-    public PromoListaServizi(String nome, Float prezzo, String listaServizi){
+    public PromoListaServizi(String nome, BigDecimal prezzo, String listaServizi){
         this.nomePromo = nome;
         this.costo = prezzo;
         this.serviziOfferti = listaServizi;
@@ -19,7 +21,7 @@ public class PromoListaServizi {
 
     @Override
     public String toString(){
-        return String.format("Promozione: %s \nServizi offerti: %s\n\n", nomePromo, serviziOfferti);
+        return String.format("Promozione: %s \nServizi offerti: %s\nCosto: %s\n\n", nomePromo, serviziOfferti, costo);
     }
 
     public String getNomePromo() {
@@ -30,11 +32,11 @@ public class PromoListaServizi {
         this.nomePromo = nomePromo;
     }
 
-    public Float getCosto() {
+    public BigDecimal getCosto() {
         return costo;
     }
 
-    public void setCosto(Float costo) {
+    public void setCosto(BigDecimal costo) {
         this.costo = costo;
     }
 

@@ -26,6 +26,15 @@ public class ClientiController extends Controller {
         return ok("Cliente inserito");
     }
 
+    @Transactional
+    public static Result getNumNoleggi(){
+
+        ClientiDao dao = new ClientiDao();
+
+        Integer quantita = dao.getNumNoleggi();
+
+        return ok("Numero clienti che hanno effettuato il noleggio " + quantita);
+    }
 //    @Transactional
 //    public static Result show() {
 //        Form<ClientiEntity> clienteForm = Form.form(model.ClientiEntity.class);

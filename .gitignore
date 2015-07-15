@@ -1,3 +1,11 @@
+# File da ignorare
+.idea
+.settings
+logs
+project
+public
+test
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

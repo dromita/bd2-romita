@@ -23,11 +23,22 @@ public class PromozioniController extends Controller {
         PromozioniDao promoDao = new PromozioniDao();
         promoDao.persist(promozione);
 
+        //TODO
         // FAI COMPARIRE ELENCO di TUTTI i servizi
         // oppure permetti di inserire i nomi dei servizi testualmente
         // AGGIUNGI le n tuple PromoServizi
 
         return ok("promozione inserito");
+    }
+
+    @Transactional
+    public static Result showTopPromo(){
+        // if (promozione.isNull()) return badRequest(views.html.promozione.render(form));
+
+        PromozioniDao promoDao = new PromozioniDao();
+        PromozioniEntity top = promoDao.getTopPromo();
+
+        return ok(String.format("Promozione migliore: %s per %s euro"), top.getNome(), top.getCosto());
     }
 //
 //    @Transactional
