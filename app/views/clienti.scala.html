@@ -1,0 +1,73 @@
+@(clienteForm: Form[model.ClientiEntity])
+
+@import tags._
+@import helper._
+@import views.html.helper._
+
+
+@main("Aggiungi Cliente") {
+
+
+    <div class="container">
+
+        @helper.form(action = routes.ClientiController.aggiungiCliente()) {
+            <div id="signup" class="row">
+
+                @if(clienteForm.hasErrors) {
+                    <p class="error">
+                    @notice("error") {color => <span style="color:red"> @clienteForm.globalError.message </span>}
+                    </p>
+                }
+
+                    <!-- Text input-->
+                @inputText(
+                    clienteForm("cf"),
+                    '_label -> "Codice Fiscale"
+                )
+
+                @inputText(
+                    clienteForm("cognome"),
+                    '_label -> "Cognome"
+                )
+
+                @inputText(
+                    clienteForm("nome"),
+                    '_label -> "nome"
+                )
+
+                @inputText(
+                    clienteForm("indirizzo"),
+                    '_label -> "Indirizzo"
+                )
+
+                @inputText(
+                    clienteForm("citta"),
+                    '_label -> "Città"
+                )
+
+                @inputText(
+                    clienteForm("cap"),
+                    '_label -> "CAP"
+                )
+
+                @inputText(
+                    clienteForm("provincia"),
+                    '_label -> "Provincia"
+                )
+
+                    <!-- Button -->
+                <div class="control-group">
+                    <label class="control-label" for="submit"></label>
+
+                    <div class="controls">
+                        <button id="submit" name="submit" class="btn btn-primary">Salva</button>
+                    </div>
+                </div>
+
+            }
+    </div>
+
+    </div>
+    <br><br>
+
+}

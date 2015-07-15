@@ -1,0 +1,12 @@
+2015-07-15 02:21:25,953 - [INFO] - from play in pool-6-thread-5 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2015-07-15 02:42:02,703 - [INFO] - from play in play-internal-execution-context-1 
+datasource [jdbc:postgresql://localhost:5432/centro_benessere] bound to JNDI as DefaultDS
+
+2015-07-15 02:42:02,975 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost:5432/centro_benessere
+
+2015-07-15 02:42:03,714 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+

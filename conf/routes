@@ -1,0 +1,21 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index()
+##GET     /add_cliente                controllers.ClientiController.show()
+POST    /add_cliente                controllers.ClientiController.aggiungiCliente()
+#GET     /autisti_corse              controllers.AutistiController.autisti_corse_giornaliere()
+#GET     /most_traveled_lines        controllers.LineeController.show_most_traveled_lines()
+#GET     /dashboard                  controllers.DashboardController.index()
+#GET     /add_corsa                  controllers.CorseController.show()
+#POST    /add_corsa                  controllers.CorseController.add()
+#GET     /edit                       controllers.CorseController.edit(corsa: Integer)
+#GET     /modifica_corsa             controllers.CorseController.show_edit()
+#POST    /update_corsa               controllers.CorseController.update()
+#POST    /search                     controllers.LineeController.search()
+#GET     /all_lines                  controllers.LineeController.all_percorsi_with_times()
+
+# Map static resources from the /public folder to the /assets URL path
+GET        /assets/*file        controllers.Assets.at(path="/public", file)

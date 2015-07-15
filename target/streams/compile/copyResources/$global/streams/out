@@ -1,0 +1,6 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(D:\typesafe_activator\activator-dist-1.3.5\bd2-romita\conf\application.conf,D:\typesafe_activator\activator-dist-1.3.5\bd2-romita\target\scala-2.11\classes\application.conf)[0m
+[0m[[0mdebug[0m] [0m	(D:\typesafe_activator\activator-dist-1.3.5\bd2-romita\conf\logback.xml,D:\typesafe_activator\activator-dist-1.3.5\bd2-romita\target\scala-2.11\classes\logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(D:\typesafe_activator\activator-dist-1.3.5\bd2-romita\conf\META-INF,D:\typesafe_activator\activator-dist-1.3.5\bd2-romita\target\scala-2.11\classes\META-INF)[0m
+[0m[[0mdebug[0m] [0m	(D:\typesafe_activator\activator-dist-1.3.5\bd2-romita\conf\routes,D:\typesafe_activator\activator-dist-1.3.5\bd2-romita\target\scala-2.11\classes\routes)[0m
+[0m[[0mdebug[0m] [0m	(D:\typesafe_activator\activator-dist-1.3.5\bd2-romita\conf\META-INF\persistence.xml,D:\typesafe_activator\activator-dist-1.3.5\bd2-romita\target\scala-2.11\classes\META-INF\persistence.xml)[0m
