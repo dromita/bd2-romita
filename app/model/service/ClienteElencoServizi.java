@@ -33,7 +33,7 @@ public class ClienteElencoServizi {
         if (elencoServizi == null)
             result = String.format("%s ($s), %s il %s", nomeCliente, codiceCliente, nomeServizio, dataFruizione);
         else
-            result = nomeCliente + " " + elencoServizi;
+            result = nomeCliente + ", Servizi fruiti: " + elencoServizi;
 
         return result;
     }

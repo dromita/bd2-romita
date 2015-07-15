@@ -22,11 +22,12 @@ public class PrenotazioniController extends Controller {
         return ok("prenotazione inserito");
     }
 
-//    @Transactional
-//    public static Result show() {
-//        Form<PrenotazioniEntity> prenotazioneForm = Form.form(model.PrenotazioniEntity.class);
-//
-//        return ok(views.html.prenotazioni.render(prenotazioneForm));
-//    }
+    @Transactional
+    public static Result show() {
+        Form<PrenotazioniEntity> prenotazioneForm = Form.form(model.PrenotazioniEntity.class);
+
+        return ok("Mi devi ancora implementare in show prenotazioni");
+        //return ok(views.html.prenotazioni.render(prenotazioneForm));
+    }
 
 }

@@ -2,6 +2,7 @@ package controllers;
 
 import dao.PromozioniDao;
 import model.PromozioniEntity;
+import model.service.PromoElencoServizi;
 import play.data.Form;
 import play.db.jpa.Transactional;
 import play.mvc.Controller;
@@ -58,6 +59,14 @@ public class PromozioniController extends Controller {
 
         return ok("mi devi ancora implementare bene in show di promozioni");
         //return ok(views.html.promozioni.render(promozioneForm));
+    }
+
+    @Transactional
+    public static Result getPromo(int idPromo){
+        PromozioniDao dao = new PromozioniDao();
+        PromoElencoServizi promo = dao.getDetailedPromo(idPromo);
+
+        return ok(promo.toString());
     }
 
 }

@@ -41,7 +41,7 @@ public class PromozioniDao extends DaoService<PromozioniEntity, Integer> {
             elenco.append(servizio.getNome() + ", ");
         }
 
-        return elenco.substring(0, elenco.length() - 2);
+        return elenco.substring(0, elenco.length() - 2) + "\n\n";
     }
 
     public List<ServiziEntity> getServizi(int idPromo){

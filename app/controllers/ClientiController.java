@@ -3,6 +3,7 @@ package controllers;
 import dao.ClientiDao;
 import model.ClientiEntity;
 import model.forms.ClienteForm;
+import model.service.ClienteElencoServizi;
 import play.data.Form;
 import play.db.jpa.Transactional;
 import play.mvc.Controller;
@@ -41,7 +42,16 @@ public class ClientiController extends Controller {
     public static Result show() {
         Form<ClienteForm> clienteForm = Form.form(model.forms.ClienteForm.class);
 
-        return ok(views.html.clienti.render(clienteForm));
+        return ok("mi devi ancora definire bene in show di cliente");
+        //return ok(views.html.clienti.render(clienteForm));
+    }
+
+    @Transactional
+    public static Result getServiziCliente(Integer idCliente){
+        ClientiDao dao = new ClientiDao();
+        ClienteElencoServizi cliente = dao.getDetailedCliente(idCliente);
+
+        return ok(cliente.toString());
     }
 
 }
