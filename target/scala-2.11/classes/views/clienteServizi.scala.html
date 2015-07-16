@@ -1,0 +1,61 @@
+@(cliente: model.ClientiEntity, clienteServiziForm: Form[model.forms.ServiziClientiForm])
+
+@import tags._
+@import helper._
+@import views.html.helper._
+
+
+@main("Aggiungi Servizi") {
+
+
+    <div class="container">
+
+        @helper.form(action = routes.ClientiController.aggiungiServiziCliente(cliente.getId())) {
+            <div id="signup" class="row">
+
+                @if(clienteServiziForm.hasErrors) {
+                    <p class="error">
+                    @notice("error") {color => <span style="color:red"> @clienteServiziForm.globalError.message </span>}
+                    </p>
+                }
+
+                    <!-- Checkboxes -->
+
+                @checkbox(
+                    field = clienteServiziForm("spa"),
+                    '_label -> "SPA"
+                )
+
+                @checkbox(
+                    field = clienteServiziForm("piscina"),
+                    '_label -> "Piscina"
+                )
+
+                @checkbox(
+                    field = clienteServiziForm("mass_relax"),
+                    '_label -> "Massaggio relax"
+                )
+
+                @checkbox(
+                    field = clienteServiziForm("mass_shiatsu"),
+                    '_label -> "Massaggio shiatsu"
+                )
+
+
+
+                    <!-- Button -->
+                <div class="control-group">
+                    <label class="control-label" for="submit"></label>
+
+                    <div class="controls">
+                        <button id="submit" name="submit" class="btn btn-primary">Salva</button>
+                    </div>
+                </div>
+
+            }
+    </div>
+
+    </div>
+    <br><br>
+
+}

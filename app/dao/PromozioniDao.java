@@ -6,6 +6,7 @@ import model.service.PromoElencoServizi;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
+import java.math.BigDecimal;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -16,17 +17,17 @@ public class PromozioniDao extends DaoService<PromozioniEntity, Integer> {
     EntityManager em = super.getEntityManager();
 
     public PromozioniEntity getTopPromo(){
-        Query q = em.createQuery("SELECT get_top_promo()");
+        Query q = em.createNativeQuery("SELECT get_top_promo()");
 
         Integer idPromo = (Integer)q.getSingleResult();
 
-        q = em.createQuery("SELECT * FROM promozioni WHERE id = :idPromo").setParameter("idPromo", idPromo);
+        q = em.createQuery("FROM promozioni WHERE id = :idPromo").setParameter("idPromo", idPromo);
 
         return (PromozioniEntity)q.getSingleResult();
     }
 
     public PromozioniEntity getPromo(int promoId){
-        return (PromozioniEntity) em.createQuery("SELECT * FROM promozioni WHERE id = :idPromo").setParameter("idPromo", promoId).getSingleResult();
+        return (PromozioniEntity) em.createQuery("FROM promozioni WHERE id = :idPromo").setParameter("idPromo", promoId).getSingleResult();
     }
 
     public List<PromozioniEntity> getAllPromos(){
@@ -49,10 +50,16 @@ public class PromozioniDao extends DaoService<PromozioniEntity, Integer> {
         List<ServiziEntity> listaServizi = new LinkedList<>();
 
         for (Object[] o : listaRifServizi){
-            ServiziEntity servizio =
-                    (ServiziEntity) em.createNativeQuery("SELECT * FROM servizi WHERE nome = :nomeServ ")
-                            .setParameter("nomeServ", (String) o[2])
-                            .getSingleResult();
+
+            List<Object[]> objList = em.createNativeQuery("SELECT * FROM servizi WHERE nome = :nomeServ ")
+                    .setParameter("nomeServ", (String) o[2])
+                    .getResultList();
+            Object[] obj = objList.get(0);
+
+            ServiziEntity servizio = new ServiziEntity();
+            servizio.setNome((String)obj[0]);
+            servizio.setCosto((BigDecimal)obj[1]);
+            servizio.setDescrizione((String)obj[2]);
 
             listaServizi.add(servizio);
         }

@@ -2,6 +2,7 @@ package controllers;
 
 import dao.ClientiDao;
 import dao.FruizioneServiziClientiDao;
+import dao.PrenotazioniDao;
 import model.ClientiEntity;
 import model.FruizioneServiziClientiEntity;
 import model.forms.ClienteForm;
@@ -12,6 +13,7 @@ import play.db.jpa.Transactional;
 import play.mvc.Controller;
 import play.mvc.Result;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 /**
@@ -54,13 +56,12 @@ public class ClientiController extends Controller {
     }
 
     @Transactional
-    public static Result getNumNoleggi(){
+    public static Result getStats(){
 
-        ClientiDao dao = new ClientiDao();
+        Long quantita = new ClientiDao().getNumNoleggi();
+        Double perm_media = new PrenotazioniDao().getPermanenzaMedia();
 
-        Integer quantita = dao.getNumNoleggi();
-
-        return ok("Numero clienti che hanno effettuato il noleggio " + quantita);
+        return ok(views.html.noleggi.render(quantita, perm_media));
     }
 
     @Transactional

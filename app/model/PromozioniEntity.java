@@ -17,6 +17,7 @@ public class PromozioniEntity {
     private Short venditeTrim;
 
     @Id
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false, insertable = true, updatable = true)
     public Integer getId() {
         return id;
@@ -67,7 +68,7 @@ public class PromozioniEntity {
     }
 
     @Basic
-    @Column(name = "vendite_trim", nullable = false, insertable = true, updatable = true)
+    @Column(name = "vendite_trim", nullable = true, insertable = true, updatable = true)
     public Short getVenditeTrim() {
         return venditeTrim;
     }

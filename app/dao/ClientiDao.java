@@ -18,10 +18,10 @@ import java.util.List;
 public class ClientiDao extends DaoService<ClientiEntity, Integer> {
     EntityManager em = super.getEntityManager();
 
-    public int getNumNoleggi(){
+    public Long getNumNoleggi(){
         Query q = em.createQuery("SELECT count(id) FROM clienti WHERE noloAccessori = 'true'");
 
-        return (Integer)q.getSingleResult();
+        return (Long)q.getSingleResult();
     }
 
     public List<ClientiEntity> getAllClienti(){

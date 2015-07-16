@@ -4,6 +4,7 @@ import model.PrenotazioniEntity;
 
 import javax.persistence.Query;
 import javax.persistence.EntityManager;
+import java.math.BigDecimal;
 import java.util.List;
 
 /**
@@ -12,10 +13,10 @@ import java.util.List;
 public class PrenotazioniDao extends DaoService<PrenotazioniEntity, Integer> {
     EntityManager em = super.getEntityManager();
 
-    public float getPermanenzaMedia(){
+    public Double getPermanenzaMedia(){
         Query q = em.createQuery("SELECT AVG(numGiorni) FROM prenotazioni");
 
-        return (Float)q.getSingleResult();
+        return (Double)q.getSingleResult();
     }
 
     public List<PrenotazioniEntity> getAllPrenotazioni(){

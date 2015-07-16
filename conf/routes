@@ -3,20 +3,20 @@
 # ~~~~
 
 # Home page
-GET         /                        controllers.Application.index()
-GET         /add_cliente             controllers.ClientiController.show()
-POST        /add_cliente             controllers.ClientiController.aggiungiCliente()
-GET         /show_clienti            controllers.ClientiController.show_all_clients()
-POST        /add_servizi_cliente      controllers.ClientiController.aggiungiServiziCliente(codiceCliente: Integer)
-GET         /getNoleggi              controllers.ClientiController.getNumNoleggi()
+GET         /                           controllers.Application.index()
+GET         /add_cliente                controllers.ClientiController.show()
+POST        /add_cliente                controllers.ClientiController.aggiungiCliente()
+GET         /show_clienti               controllers.ClientiController.show_all_clients()
+POST        /add_servizi_cliente        controllers.ClientiController.aggiungiServiziCliente(codiceCliente: Integer)
+GET         /stats                 controllers.ClientiController.getStats()
 #GET         /get_dettagli_cliente    controllers.ClientiController.
-GET         /add_promo               controllers.PromozioniController.show()
-POST        /add_promo               controllers.PromozioniController.aggiungiPromozione()
-GET         /get_top_promo           controllers.PromozioniController.showTopPromo()
-GET         /get_all_promos          controllers.PromozioniController.showAllPromos()
-GET         /get_promo               controllers.PromozioniController.getPromo(idPromo: Integer)
-GET         /add_prenotazione        controllers.PrenotazioniController.show()
-POST        /add_prenotazione        controllers.PrenotazioniController.aggiungiPrenotazione()
+GET         /add_promo                  controllers.PromozioniController.show()
+POST        /add_promo                  controllers.PromozioniController.aggiungiPromoServizi()
+GET         /get_top_promo              controllers.PromozioniController.showTopPromo()
+GET         /get_all_promos             controllers.PromozioniController.showAllPromos()
+GET         /get_promo                  controllers.PromozioniController.getPromo(idPromo: Integer)
+GET         /add_prenotazione           controllers.PrenotazioniController.show()
+POST        /add_prenotazione           controllers.PrenotazioniController.aggiungiPrenotazione()
 #GET     /autisti_corse              controllers.AutistiController.autisti_corse_giornaliere()
 #GET     /most_traveled_lines        controllers.LineeController.show_most_traveled_lines()
 #GET     /dashboard                  controllers.DashboardController.index()
@@ -29,4 +29,4 @@ POST        /add_prenotazione        controllers.PrenotazioniController.aggiungi
 #GET     /all_lines                  controllers.LineeController.all_percorsi_with_times()
 
 # Map static resources from the /public folder to the /assets URL path
-GET         /assets/*file            controllers.Assets.at(path="/public", file)
+GET         /assets/*file               controllers.Assets.at(path="/public", file)

@@ -1,0 +1,99 @@
+@(promoServiziForm: Form[model.forms.PromoServiziForm])
+
+@import tags._
+@import helper._
+@import views.html.helper._
+
+
+@main("Aggiungi Servizi") {
+
+
+    <div class="container">
+
+        @helper.form(action = routes.PromozioniController.aggiungiPromoServizi()) {
+            <div id="signup" class="row">
+
+                @if(promoServiziForm.hasErrors) {
+                    <p class="error">
+                    @notice("error") {color => <span style="color:red"> @promoServiziForm.globalError.message </span>}
+                    </p>
+                }
+
+                    <!-- Text input -->
+
+                @inputText(
+                    promoServiziForm("nome"),
+                    '_label -> "Nome promozione"
+                )
+
+                @inputText(
+                    promoServiziForm("sitoweb"),
+                    '_label -> "Sito web sponsorizzante"
+                )
+
+                @inputText(
+                    promoServiziForm("costo"),
+                    '_label -> "Prezzo promozione"
+                )
+
+                @inputText(
+                    promoServiziForm("numNotti"),
+                    '_label -> "Numero pernottamenti inclusi"
+                )
+
+                    <!-- Checkboxes -->
+
+                @checkbox(
+                    field = promoServiziForm("spa"),
+                    '_label -> "SPA"
+                )
+                @inputText(
+                    promoServiziForm("q_spa"),
+                    '_label -> "Numero trattamenti SPA inclusi"
+                )
+
+                @checkbox(
+                    field = promoServiziForm("piscina"),
+                    '_label -> "Piscina"
+                )
+                @inputText(
+                    promoServiziForm("q_piscina"),
+                    '_label -> "Numero trattamenti piscina inclusi"
+                )
+
+                @checkbox(
+                    field = promoServiziForm("mass_relax"),
+                    '_label -> "Massaggio relax"
+                )
+                @inputText(
+                    promoServiziForm("q_mass_relax"),
+                    '_label -> "Numero massaggi relax inclusi"
+                )
+
+                @checkbox(
+                    field = promoServiziForm("mass_shiatsu"),
+                    '_label -> "Massaggio shiatsu"
+                )
+                @inputText(
+                    promoServiziForm("q_mass_shiatsu"),
+                    '_label -> "Numero massaggi shiatsu inclusi"
+                )
+
+
+
+                    <!-- Button -->
+                <div class="control-group">
+                    <label class="control-label" for="submit"></label>
+
+                    <div class="controls">
+                        <button id="submit" name="submit" class="btn btn-primary">Salva</button>
+                    </div>
+                </div>
+
+            }
+    </div>
+
+    </div>
+    <br><br>
+
+}

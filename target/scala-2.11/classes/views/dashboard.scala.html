@@ -1,0 +1,40 @@
+@main("Dashboard") {
+
+    <div class="container">
+        <div>
+        @if(flash.contains("success")) {
+            <p class="success">
+            @flash.get("success")
+            </p>
+        }
+        </div>
+
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <h3 class="text-left text-info">
+                    Gestione Clienti
+                </h3>
+                @*<div><a href="@routes.ClientiController.aggiungiCliente()">Aggiungi cliente</a></div>*@
+                @*<div><a href="@routes.ClientiController.show_edit()">Modifica cliente</a></div>*@
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <h3 class="text-left text-info">
+                    Gestione Autisti
+                </h3>
+                @*<div><a href="@routes.AutistiController.show()">Assumi nuovo autista</a></div>*@
+                @*<div><a href="@routes.AutistiController.autisti_corse_giornaliere()">Stampa info corse-autisti</a></div>*@
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <h3 class="text-left text-info">
+                    Gestione Linee
+                </h3>
+                @*<div><a href="@routes.LineeController.show_most_traveled_lines()">Linee traffico</a></div>*@
+                @*<div><a href="@routes.LineeController.all_percorsi_with_times()">Mostra percorsi</a></div>*@
+            </div>
+        </div>
+    </div>
+}

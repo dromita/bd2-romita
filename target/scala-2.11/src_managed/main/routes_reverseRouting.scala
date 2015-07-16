@@ -1,6 +1,6 @@
 // @SOURCE:D:/typesafe_activator/activator-dist-1.3.5/bd2-romita/conf/routes
-// @HASH:2a770844e75caaec2e0ff477c1384fb495cf9645
-// @DATE:Wed Jul 15 19:36:58 CEST 2015
+// @HASH:d11471c38be90448284d993af70bae4a6c39ded7
+// @DATE:Wed Jul 15 21:55:37 CEST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -82,13 +82,6 @@ def show(): Call = {
 }
                         
 
-// @LINE:11
-def getNumNoleggi(): Call = {
-   import ReverseRouteContext.empty
-   Call("GET", _prefix + { _defaultPrefix } + "getNoleggi")
-}
-                        
-
 // @LINE:10
 def aggiungiServiziCliente(codiceCliente:Integer): Call = {
    import ReverseRouteContext.empty
@@ -100,6 +93,13 @@ def aggiungiServiziCliente(codiceCliente:Integer): Call = {
 def show_all_clients(): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "show_clienti")
+}
+                        
+
+// @LINE:11
+def getStats(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "stats")
 }
                         
 
@@ -122,7 +122,7 @@ class ReversePromozioniController {
 
 
 // @LINE:14
-def aggiungiPromozione(): Call = {
+def aggiungiPromoServizi(): Call = {
    import ReverseRouteContext.empty
    Call("POST", _prefix + { _defaultPrefix } + "add_promo")
 }
@@ -260,17 +260,6 @@ def show : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:11
-def getNumNoleggi : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.ClientiController.getNumNoleggi",
-   """
-      function() {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "getNoleggi"})
-      }
-   """
-)
-                        
-
 // @LINE:10
 def aggiungiServiziCliente : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.ClientiController.aggiungiServiziCliente",
@@ -288,6 +277,17 @@ def show_all_clients : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "show_clienti"})
+      }
+   """
+)
+                        
+
+// @LINE:11
+def getStats : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.ClientiController.getStats",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "stats"})
       }
    """
 )
@@ -316,8 +316,8 @@ class ReversePromozioniController {
 
 
 // @LINE:14
-def aggiungiPromozione : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.PromozioniController.aggiungiPromozione",
+def aggiungiPromoServizi : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.PromozioniController.aggiungiPromoServizi",
    """
       function() {
       return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "add_promo"})
@@ -458,12 +458,6 @@ def show(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 )
                       
 
-// @LINE:11
-def getNumNoleggi(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.ClientiController.getNumNoleggi(), HandlerDef(this.getClass.getClassLoader, "", "controllers.ClientiController", "getNumNoleggi", Seq(), "GET", """""", _prefix + """getNoleggi""")
-)
-                      
-
 // @LINE:10
 def aggiungiServiziCliente(codiceCliente:Integer): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.ClientiController.aggiungiServiziCliente(codiceCliente), HandlerDef(this.getClass.getClassLoader, "", "controllers.ClientiController", "aggiungiServiziCliente", Seq(classOf[Integer]), "POST", """""", _prefix + """add_servizi_cliente""")
@@ -473,6 +467,12 @@ def aggiungiServiziCliente(codiceCliente:Integer): play.api.mvc.HandlerRef[_] = 
 // @LINE:9
 def show_all_clients(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.ClientiController.show_all_clients(), HandlerDef(this.getClass.getClassLoader, "", "controllers.ClientiController", "show_all_clients", Seq(), "GET", """""", _prefix + """show_clienti""")
+)
+                      
+
+// @LINE:11
+def getStats(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.ClientiController.getStats(), HandlerDef(this.getClass.getClassLoader, "", "controllers.ClientiController", "getStats", Seq(), "GET", """""", _prefix + """stats""")
 )
                       
 
@@ -494,8 +494,8 @@ class ReversePromozioniController {
 
 
 // @LINE:14
-def aggiungiPromozione(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.PromozioniController.aggiungiPromozione(), HandlerDef(this.getClass.getClassLoader, "", "controllers.PromozioniController", "aggiungiPromozione", Seq(), "POST", """""", _prefix + """add_promo""")
+def aggiungiPromoServizi(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.PromozioniController.aggiungiPromoServizi(), HandlerDef(this.getClass.getClassLoader, "", "controllers.PromozioniController", "aggiungiPromoServizi", Seq(), "POST", """""", _prefix + """add_promo""")
 )
                       
 

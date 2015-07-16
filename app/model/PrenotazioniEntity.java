@@ -7,7 +7,7 @@ import java.sql.Date;
  * Created by Nomak on 14/07/2015.
  */
 @Entity(name = "prenotazioni")
-// @Table(name = "prenotazioni", schema = "public", catalog = "centro_benessere")
+// @Table(name = "noleggi", schema = "public", catalog = "centro_benessere")
 public class PrenotazioniEntity {
     private Integer id;
     private Date checkin;

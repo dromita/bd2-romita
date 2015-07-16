@@ -26,8 +26,8 @@ public class PrenotazioniController extends Controller {
     public static Result show() {
         Form<PrenotazioniEntity> prenotazioneForm = Form.form(model.PrenotazioniEntity.class);
 
-        return ok("Mi devi ancora implementare in show prenotazioni");
-        //return ok(views.html.prenotazioni.render(prenotazioneForm));
+        return ok("Mi devi ancora implementare in show noleggi");
+        //return ok(views.html.noleggi.render(prenotazioneForm));
     }
 
 }

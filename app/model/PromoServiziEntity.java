@@ -10,8 +10,11 @@ import javax.persistence.*;
 public class PromoServiziEntity {
     private Integer id;
     private Short quantita;
+    private PromozioniEntity promozione;
+    private ServiziEntity servizio;
 
     @Id
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false, insertable = true, updatable = true)
     public Integer getId() {
         return id;
@@ -55,5 +58,25 @@ public class PromoServiziEntity {
     @Override
     public String toString(){
         return String.format("ID: %s, quantita\': %s", id, quantita);
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "promo", referencedColumnName = "id", nullable = false)
+    public PromozioniEntity getPromozioneByPromozione() {
+        return promozione;
+    }
+
+    public void setPromozioneByPromozione(PromozioniEntity promozione) {
+        this.promozione = promozione;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "servizio", referencedColumnName = "nome", nullable = false)
+    public ServiziEntity getServizioByServizio() {
+        return servizio;
+    }
+
+    public void setServizioByServizio(ServiziEntity servizio) {
+        this.servizio = servizio;
     }
 }
