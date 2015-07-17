@@ -7,6 +7,7 @@ import model.service.ServizioConData;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
+import java.math.BigInteger;
 import java.sql.Date;
 import java.util.LinkedList;
 import java.util.List;
@@ -18,10 +19,10 @@ import java.util.List;
 public class ClientiDao extends DaoService<ClientiEntity, Integer> {
     EntityManager em = super.getEntityManager();
 
-    public Long getNumNoleggi(){
-        Query q = em.createQuery("SELECT count(id) FROM clienti WHERE noloAccessori = 'true'");
-
-        return (Long)q.getSingleResult();
+    public BigInteger getNumNoleggi(){
+//        Query q = em.createQuery("SELECT count(id) FROM clienti WHERE noloAccessori = 'true'");
+        Query q = em.createNativeQuery("SELECT count(id) FROM fruizione_servizi_clienti WHERE nolo_accessori = 'true'");
+        return (BigInteger)q.getSingleResult();
     }
 
     public List<ClientiEntity> getAllClienti(){

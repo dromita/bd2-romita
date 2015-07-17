@@ -33,6 +33,7 @@ public class PromozioniController extends Controller {
         topPromo.nome = top.getNome();
         topPromo.costo = String.valueOf(top.getCosto());
         topPromo.numNotti = String.valueOf(top.getNumNotti());
+        topPromo.tipoCamera = String.valueOf(top.getTipoCamera());
 
         List<ServiziEntity> listaServizi = new PromozioniDao().getServizi(top.getId());
         topPromo.servizi = listaServizi.stream()

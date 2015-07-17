@@ -18,6 +18,7 @@ public class PromoServiziForm {
     public String sitoweb;
     public String costo;
     public String numNotti;
+    public String tipoCamera;
 
     public Boolean spa;
     public Boolean piscina;
@@ -39,6 +40,7 @@ public class PromoServiziForm {
         promo.setSitoWeb(sitoweb);
         promo.setNome(nome);
         promo.setNumNotti(Short.parseShort(numNotti));
+        promo.setTipoCamera(tipoCamera);
 
         return promo;
     }

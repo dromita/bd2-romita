@@ -20,13 +20,13 @@ import play.mvc.Http.Context.Implicit._
 import views.html._
 
 /**/
-object noleggi extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template2[java.lang.Long,java.lang.Double,play.twirl.api.HtmlFormat.Appendable] {
+object noleggi extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template2[java.math.BigInteger,java.lang.Double,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(noleggi: java.lang.Long, perm_media: java.lang.Double):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(noleggi: java.math.BigInteger, perm_media: java.lang.Double):play.twirl.api.HtmlFormat.Appendable = {
       _display_ {
 
-Seq[Any](format.raw/*1.57*/("""
+Seq[Any](format.raw/*1.63*/("""
 
 """),_display_(/*3.2*/main("Numero noleggi")/*3.24*/ {_display_(Seq[Any](format.raw/*3.26*/("""
 
@@ -43,19 +43,19 @@ Seq[Any](format.raw/*1.57*/("""
 """))}
   }
 
-  def render(noleggi:java.lang.Long,perm_media:java.lang.Double): play.twirl.api.HtmlFormat.Appendable = apply(noleggi,perm_media)
+  def render(noleggi:java.math.BigInteger,perm_media:java.lang.Double): play.twirl.api.HtmlFormat.Appendable = apply(noleggi,perm_media)
 
-  def f:((java.lang.Long,java.lang.Double) => play.twirl.api.HtmlFormat.Appendable) = (noleggi,perm_media) => apply(noleggi,perm_media)
+  def f:((java.math.BigInteger,java.lang.Double) => play.twirl.api.HtmlFormat.Appendable) = (noleggi,perm_media) => apply(noleggi,perm_media)
 
   def ref: this.type = this
 
 }
               /*
                   -- GENERATED --
-                  DATE: Wed Jul 15 21:54:28 CEST 2015
+                  DATE: Fri Jul 17 01:26:20 CEST 2015
                   SOURCE: D:/typesafe_activator/activator-dist-1.3.5/bd2-romita/app/views/noleggi.scala.html
-                  HASH: e41db68e2e21e77f081f8cf00f50e45155643d82
-                  MATRIX: 750->1|893->56|921->59|951->81|990->83|1022->89|1150->191|1177->198|1267->262|1297->272|1361->306
+                  HASH: 3233c51eb0b15badca6df214e1c5e72138a60664
+                  MATRIX: 756->1|905->62|933->65|963->87|1002->89|1034->95|1162->197|1189->204|1279->268|1309->278|1373->312
                   LINES: 26->1|29->1|31->3|31->3|31->3|33->5|36->8|36->8|37->9|37->9|42->14
                   -- GENERATED --
               */

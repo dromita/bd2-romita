@@ -14,7 +14,7 @@ public class PrenotazioniDao extends DaoService<PrenotazioniEntity, Integer> {
     EntityManager em = super.getEntityManager();
 
     public Double getPermanenzaMedia(){
-        Query q = em.createQuery("SELECT AVG(numGiorni) FROM prenotazioni");
+        Query q = em.createQuery("SELECT AVG(checkout - checkin) FROM prenotazioni");
 
         return (Double)q.getSingleResult();
     }

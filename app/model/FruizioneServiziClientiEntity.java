@@ -1,5 +1,7 @@
 package model;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
+
 import javax.persistence.*;
 import java.sql.Date;
 
@@ -13,6 +15,7 @@ public class FruizioneServiziClientiEntity {
     private Date dataFruizione;
     private ClientiEntity clienteByCliente;
     private ServiziEntity servizioByServizio;
+    private Boolean noloAccessori;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -47,6 +50,16 @@ public class FruizioneServiziClientiEntity {
             return false;
 
         return true;
+    }
+
+    @Basic
+    @Column(name = "nolo_accessori", nullable = false, insertable = true, updatable = true)
+    public Boolean getNoloAccessori() {
+        return noloAccessori;
+    }
+
+    public void setNoloAccessori(Boolean noloAccessori) {
+        this.noloAccessori = noloAccessori;
     }
 
     @Override

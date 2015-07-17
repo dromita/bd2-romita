@@ -10,6 +10,7 @@ public class TopPromo {
     public String nome;
     public String costo;
     public String numNotti;
+    public String tipoCamera;
     public List<String> servizi;
 
 }

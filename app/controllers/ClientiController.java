@@ -14,6 +14,7 @@ import play.mvc.Controller;
 import play.mvc.Result;
 
 import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.util.List;
 
 /**
@@ -58,7 +59,7 @@ public class ClientiController extends Controller {
     @Transactional
     public static Result getStats(){
 
-        Long quantita = new ClientiDao().getNumNoleggi();
+        BigInteger quantita = new ClientiDao().getNumNoleggi();
         Double perm_media = new PrenotazioniDao().getPermanenzaMedia();
 
         return ok(views.html.noleggi.render(quantita, perm_media));

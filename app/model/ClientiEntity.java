@@ -18,7 +18,6 @@ public class ClientiEntity {
     private String cap;
     private String cf;
     private Date dataNascita;
-    private Boolean noloAccessori;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -111,15 +110,6 @@ public class ClientiEntity {
         this.dataNascita = dataNascita;
     }
 
-    @Basic
-    @Column(name = "nolo_accessori", nullable = true, insertable = true, updatable = true)
-    public Boolean getNoloAccessori() {
-        return noloAccessori;
-    }
-
-    public void setNoloAccessori(Boolean noloAccessori) {
-        this.noloAccessori = noloAccessori;
-    }
 
     @Override
     public boolean equals(Object o) {
@@ -137,8 +127,6 @@ public class ClientiEntity {
         if (cap != null ? !cap.equals(that.cap) : that.cap != null) return false;
         if (cf != null ? !cf.equals(that.cf) : that.cf != null) return false;
         if (dataNascita != null ? !dataNascita.equals(that.dataNascita) : that.dataNascita != null) return false;
-        if (noloAccessori != null ? !noloAccessori.equals(that.noloAccessori) : that.noloAccessori != null)
-            return false;
 
         return true;
     }
@@ -154,7 +142,6 @@ public class ClientiEntity {
         result = 31 * result + (cap != null ? cap.hashCode() : 0);
         result = 31 * result + (cf != null ? cf.hashCode() : 0);
         result = 31 * result + (dataNascita != null ? dataNascita.hashCode() : 0);
-        result = 31 * result + (noloAccessori != null ? noloAccessori.hashCode() : 0);
         return result;
     }
 

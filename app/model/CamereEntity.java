@@ -12,6 +12,7 @@ public class CamereEntity {
     private Short numCamera;
     private Short piano;
     private BigDecimal costo;
+    private String tipo;
 
     @Id
     @Column(name = "num_camera", nullable = false, insertable = true, updatable = true)
@@ -43,6 +44,16 @@ public class CamereEntity {
         this.costo = costo;
     }
 
+    @Basic
+    @Column(name = "tipo", nullable = true, insertable = true, updatable = true)
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -51,6 +62,7 @@ public class CamereEntity {
         CamereEntity that = (CamereEntity) o;
 
         if (numCamera != null ? !numCamera.equals(that.numCamera) : that.numCamera != null) return false;
+        if (tipo != null ? !tipo.equals(that.tipo) : that.tipo!= null) return false;
         if (piano != null ? !piano.equals(that.piano) : that.piano != null) return false;
         if (costo != null ? !costo.equals(that.costo) : that.costo != null) return false;
 
@@ -62,11 +74,12 @@ public class CamereEntity {
         int result = numCamera != null ? numCamera.hashCode() : 0;
         result = 31 * result + (piano != null ? piano.hashCode() : 0);
         result = 31 * result + (costo != null ? costo.hashCode() : 0);
+        result = 31 * result + (tipo != null ? tipo.hashCode() : 0);
         return result;
     }
 
     @Override
     public String toString(){
-        return String.format("Numero camera: %s, piano: %s, costo: %s", numCamera, piano, costo);
+        return String.format("Numero camera: %s, piano: %s, costo: %s, tipo %s", numCamera, piano, costo, tipo);
     }
 }

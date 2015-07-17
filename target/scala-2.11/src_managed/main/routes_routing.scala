@@ -1,6 +1,6 @@
 // @SOURCE:D:/typesafe_activator/activator-dist-1.3.5/bd2-romita/conf/routes
-// @HASH:d11471c38be90448284d993af70bae4a6c39ded7
-// @DATE:Wed Jul 15 21:55:37 CEST 2015
+// @HASH:b61d1e3af6a13e075f9d17b398fc4f8cac75a0a5
+// @DATE:Fri Jul 17 01:21:15 CEST 2015
 
 
 import scala.language.reflectiveCalls
@@ -96,41 +96,13 @@ controllers.PromozioniController.showTopPromo(),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.PromozioniController", "showTopPromo", Nil,"GET", """""", Routes.prefix + """get_top_promo"""))
         
 
-// @LINE:16
-private[this] lazy val controllers_PromozioniController_showAllPromos9_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("get_all_promos"))))
-private[this] lazy val controllers_PromozioniController_showAllPromos9_invoker = createInvoker(
-controllers.PromozioniController.showAllPromos(),
-HandlerDef(this.getClass.getClassLoader, "", "controllers.PromozioniController", "showAllPromos", Nil,"GET", """""", Routes.prefix + """get_all_promos"""))
-        
-
-// @LINE:17
-private[this] lazy val controllers_PromozioniController_getPromo10_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("get_promo"))))
-private[this] lazy val controllers_PromozioniController_getPromo10_invoker = createInvoker(
-controllers.PromozioniController.getPromo(fakeValue[Integer]),
-HandlerDef(this.getClass.getClassLoader, "", "controllers.PromozioniController", "getPromo", Seq(classOf[Integer]),"GET", """""", Routes.prefix + """get_promo"""))
-        
-
-// @LINE:18
-private[this] lazy val controllers_PrenotazioniController_show11_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("add_prenotazione"))))
-private[this] lazy val controllers_PrenotazioniController_show11_invoker = createInvoker(
-controllers.PrenotazioniController.show(),
-HandlerDef(this.getClass.getClassLoader, "", "controllers.PrenotazioniController", "show", Nil,"GET", """""", Routes.prefix + """add_prenotazione"""))
-        
-
-// @LINE:19
-private[this] lazy val controllers_PrenotazioniController_aggiungiPrenotazione12_route = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("add_prenotazione"))))
-private[this] lazy val controllers_PrenotazioniController_aggiungiPrenotazione12_invoker = createInvoker(
-controllers.PrenotazioniController.aggiungiPrenotazione(),
-HandlerDef(this.getClass.getClassLoader, "", "controllers.PrenotazioniController", "aggiungiPrenotazione", Nil,"POST", """""", Routes.prefix + """add_prenotazione"""))
-        
-
-// @LINE:32
-private[this] lazy val controllers_Assets_at13_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
-private[this] lazy val controllers_Assets_at13_invoker = createInvoker(
+// @LINE:23
+private[this] lazy val controllers_Assets_at9_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
+private[this] lazy val controllers_Assets_at9_invoker = createInvoker(
 controllers.Assets.at(fakeValue[String], fakeValue[String]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "at", Seq(classOf[String], classOf[String]),"GET", """ Map static resources from the /public folder to the /assets URL path""", Routes.prefix + """assets/$file<.+>"""))
         
-def documentation = List(("""GET""", prefix,"""controllers.Application.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_cliente""","""controllers.ClientiController.show()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_cliente""","""controllers.ClientiController.aggiungiCliente()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """show_clienti""","""controllers.ClientiController.show_all_clients()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_servizi_cliente""","""controllers.ClientiController.aggiungiServiziCliente(codiceCliente:Integer)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """stats""","""controllers.ClientiController.getStats()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_promo""","""controllers.PromozioniController.show()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_promo""","""controllers.PromozioniController.aggiungiPromoServizi()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """get_top_promo""","""controllers.PromozioniController.showTopPromo()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """get_all_promos""","""controllers.PromozioniController.showAllPromos()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """get_promo""","""controllers.PromozioniController.getPromo(idPromo:Integer)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_prenotazione""","""controllers.PrenotazioniController.show()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_prenotazione""","""controllers.PrenotazioniController.aggiungiPrenotazione()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+def documentation = List(("""GET""", prefix,"""controllers.Application.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_cliente""","""controllers.ClientiController.show()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_cliente""","""controllers.ClientiController.aggiungiCliente()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """show_clienti""","""controllers.ClientiController.show_all_clients()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_servizi_cliente""","""controllers.ClientiController.aggiungiServiziCliente(codiceCliente:Integer)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """stats""","""controllers.ClientiController.getStats()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_promo""","""controllers.PromozioniController.show()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """add_promo""","""controllers.PromozioniController.aggiungiPromoServizi()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """get_top_promo""","""controllers.PromozioniController.showTopPromo()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -210,42 +182,10 @@ case controllers_PromozioniController_showTopPromo8_route(params) => {
 }
         
 
-// @LINE:16
-case controllers_PromozioniController_showAllPromos9_route(params) => {
-   call { 
-        controllers_PromozioniController_showAllPromos9_invoker.call(controllers.PromozioniController.showAllPromos())
-   }
-}
-        
-
-// @LINE:17
-case controllers_PromozioniController_getPromo10_route(params) => {
-   call(params.fromQuery[Integer]("idPromo", None)) { (idPromo) =>
-        controllers_PromozioniController_getPromo10_invoker.call(controllers.PromozioniController.getPromo(idPromo))
-   }
-}
-        
-
-// @LINE:18
-case controllers_PrenotazioniController_show11_route(params) => {
-   call { 
-        controllers_PrenotazioniController_show11_invoker.call(controllers.PrenotazioniController.show())
-   }
-}
-        
-
-// @LINE:19
-case controllers_PrenotazioniController_aggiungiPrenotazione12_route(params) => {
-   call { 
-        controllers_PrenotazioniController_aggiungiPrenotazione12_invoker.call(controllers.PrenotazioniController.aggiungiPrenotazione())
-   }
-}
-        
-
-// @LINE:32
-case controllers_Assets_at13_route(params) => {
+// @LINE:23
+case controllers_Assets_at9_route(params) => {
    call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_at13_invoker.call(controllers.Assets.at(path, file))
+        controllers_Assets_at9_invoker.call(controllers.Assets.at(path, file))
    }
 }
         

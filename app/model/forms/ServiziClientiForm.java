@@ -22,6 +22,7 @@ public class ServiziClientiForm {
     public Boolean piscina;
     public Boolean mass_shiatsu;
     public Boolean mass_relax;
+    public Boolean noloAccessori;
 
     public List<FruizioneServiziClientiEntity> toEntity(){
         List<FruizioneServiziClientiEntity> result = new LinkedList<>();
@@ -37,6 +38,9 @@ public class ServiziClientiForm {
                 spa.setClienteByCliente(cliente);
                 ServiziEntity servizio = new ServiziDao().findById("SPA");
                 spa.setServizioByServizio(servizio);
+                if (noloAccessori == null)
+                    noloAccessori = false;
+                spa.setNoloAccessori(noloAccessori);
 
                 result.add(spa);
             }
